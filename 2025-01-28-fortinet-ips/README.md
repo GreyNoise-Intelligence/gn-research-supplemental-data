@@ -7,7 +7,6 @@ Read all about it at [the blog post WIP](WIP LINK)
 ## Dataset Details
 
 - **Total IPs**: 366
-- **Classification Breakdown**:
   - Malicious: 35 IPs
   - Suspicious: 45 IPs
   - Unknown: 286 IPs
@@ -15,9 +14,9 @@ Read all about it at [the blog post WIP](WIP LINK)
 ## Observed Behaviors
 
 Primary malicious activities include:
-- SMBv1 scanning (81 instances)
-- SSH brute force attempts (23 instances)
-- WannaCry variant SMB traffic (13 instances)
+- SMBv1 scanning (82 instances)
+- SSH brute force attempts (24 instances)
+- WannaCry variant SMB traffic (23 instances)
 
 ## Data Format
 

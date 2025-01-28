@@ -6,10 +6,10 @@ Read all about it at [the blog post WIP](WIP LINK)
 
 ## Dataset Details
 
-- **Total IPs**: 363
+- **Total IPs**: 366
 - **Classification Breakdown**:
   - Malicious: 35 IPs
-  - Suspicious: 42 IPs
+  - Suspicious: 45 IPs
   - Unknown: 286 IPs
 
 ## Observed Behaviors

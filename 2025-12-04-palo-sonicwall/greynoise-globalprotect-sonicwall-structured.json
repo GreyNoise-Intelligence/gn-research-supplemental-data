@@ -1,0 +1,206 @@
+{
+  "campaign_id": "GNOISE-2025-GLOBALPROTECT-001",
+  "campaign_name": "GlobalProtect/SonicWall Credential Attack Campaign",
+  "report_date": "2025-12-04",
+  "report_author": "GreyNoise Intelligence",
+  "severity": "HIGH",
+  "confidence": "HIGH",
+  
+  "executive_summary": "Multi-month credential attack campaign targeting Palo Alto GlobalProtect and SonicWall SonicOS with consistent client fingerprints across infrastructure changes. 9M+ HTTP sessions generated between September-December 2025 targeting VPN and API authentication endpoints.",
+  
+  "timeline": {
+    "phase_1": {
+      "period": "2025-09-20 to 2025-10-15",
+      "description": "High-volume login and bruteforce attempts from clean ASNs",
+      "volume": "9M+ HTTP sessions",
+      "targets": ["Palo Alto GlobalProtect"]
+    },
+    "phase_2": {
+      "period": "2025-11-20 to 2025-11-30",
+      "description": "Reduced activity with intermittent sessions around Thanksgiving",
+      "targets": ["Palo Alto GlobalProtect"]
+    },
+    "phase_3": {
+      "period": "2025-12-02",
+      "description": "Reappearance on 3xK infrastructure, concentrated spike",
+      "volume": "7000+ IPs",
+      "targets": ["Palo Alto GlobalProtect"]
+    },
+    "phase_4": {
+      "period": "2025-12-03",
+      "description": "SonicWall SonicOS API login attempts with same fingerprints",
+      "targets": ["SonicWall SonicOS API"]
+    }
+  },
+  
+  "indicators": {
+    "autonomous_systems": [
+      {
+        "asn": "AS43350",
+        "name": "NForce Entertainment B.V.",
+        "first_seen": "2025-09-20",
+        "last_seen": "2025-10-15",
+        "activity": "GlobalProtect credential attacks",
+        "threat_level": "HIGH"
+      },
+      {
+        "asn": "AS215929",
+        "name": "Data Campus Limited",
+        "first_seen": "2025-09-20",
+        "last_seen": "2025-10-15",
+        "activity": "GlobalProtect credential attacks",
+        "threat_level": "HIGH"
+      },
+      {
+        "asn": "AS209588",
+        "name": "Flyservers S.A.",
+        "first_seen": "2025-09-20",
+        "last_seen": "2025-10-15",
+        "activity": "GlobalProtect credential attacks",
+        "threat_level": "HIGH"
+      },
+      {
+        "asn": "AS211632",
+        "name": "Internet Solutions & Innovations LTD",
+        "first_seen": "2025-09-20",
+        "last_seen": "2025-10-15",
+        "activity": "GlobalProtect credential attacks",
+        "threat_level": "HIGH"
+      },
+      {
+        "asn": "AS201011",
+        "name": "3xK GmbH",
+        "first_seen": "2025-12-02",
+        "last_seen": "2025-12-03",
+        "activity": "GlobalProtect and SonicWall attacks",
+        "threat_level": "HIGH",
+        "note": "7000+ IPs observed in December spike"
+      }
+    ],
+    
+    "behavioral_indicators": [
+      {
+        "indicator": "Consistent client fingerprints across infrastructure changes",
+        "description": "Three identical client fingerprints observed across all campaign phases despite ASN rotation",
+        "significance": "Indicates tooling continuity and coordinated campaign"
+      },
+      {
+        "indicator": "High-volume authentication attempts",
+        "description": "9M+ non-spoofable HTTP sessions targeting authentication surfaces",
+        "significance": "Credential harvesting or bruteforce activity"
+      },
+      {
+        "indicator": "Multi-vendor targeting with same tools",
+        "description": "Same fingerprints used against both Palo Alto and SonicWall products",
+        "significance": "Broad enterprise infrastructure reconnaissance"
+      }
+    ]
+  },
+  
+  "affected_products": [
+    {
+      "vendor": "Palo Alto Networks",
+      "product": "GlobalProtect",
+      "component": "Authentication Portal",
+      "attack_type": "Credential bruteforce/login attempts"
+    },
+    {
+      "vendor": "SonicWall",
+      "product": "SonicOS",
+      "component": "API Endpoints",
+      "attack_type": "Authentication attempts"
+    }
+  ],
+  
+  "detection_rules": {
+    "greynoise_gnql": [
+      "classification:suspicious tags:\"Palo Alto Networks GlobalProtect\"",
+      "classification:suspicious tags:SonicWall",
+      "asn:AS43350 last_seen:>2025-09-01",
+      "asn:AS215929 last_seen:>2025-09-01",
+      "asn:AS209588 last_seen:>2025-09-01",
+      "asn:AS211632 last_seen:>2025-09-01",
+      "asn:AS201011 last_seen:>2025-12-01"
+    ],
+    
+    "sigma_rules": [
+      {
+        "title": "High Volume Failed Authentication Attempts - GlobalProtect",
+        "description": "Detects high volume of failed authentication attempts against GlobalProtect portals",
+        "detection": {
+          "selection": {
+            "event_type": "authentication_failure",
+            "product": "GlobalProtect",
+            "timeframe": "5m"
+          },
+          "condition": "selection | count() > 50"
+        },
+        "level": "high"
+      },
+      {
+        "title": "GlobalProtect Authentication from Known Malicious ASN",
+        "description": "Detects authentication attempts from ASNs associated with December 2025 campaign",
+        "detection": {
+          "selection": {
+            "product": "GlobalProtect",
+            "source_asn": ["43350", "215929", "209588", "211632", "201011"]
+          }
+        },
+        "level": "high"
+      }
+    ]
+  },
+  
+  "blocking_guidance": {
+    "immediate_actions": [
+      "Block traffic from identified ASNs (AS43350, AS215929, AS209588, AS211632, AS201011) at perimeter",
+      "Enable rate limiting on GlobalProtect and SonicWall authentication endpoints",
+      "Review authentication logs for suspicious velocity or repeated failures",
+      "Implement MFA if not already enabled on VPN and API endpoints"
+    ],
+    
+    "greynoise_block": {
+      "method": "GreyNoise Block feature",
+      "template": "Palo Alto/SonicWall template",
+      "filter": "classification:suspicious",
+      "trial": "14-day free trial available",
+      "url": "https://www.greynoise.io/viz/query"
+    },
+    
+    "monitoring_recommendations": [
+      "Track recurring client fingerprints to detect campaign continuity",
+      "Monitor for authentication velocity anomalies",
+      "Alert on authentication attempts from previously unseen ASNs with similar patterns",
+      "Implement dynamic blocking based on context-aware threat intelligence"
+    ]
+  },
+  
+  "mitre_attack_mapping": [
+    {
+      "technique": "T1110 - Brute Force",
+      "sub_technique": "T1110.001 - Password Guessing",
+      "description": "High-volume credential attempts against authentication portals"
+    },
+    {
+      "technique": "T1078 - Valid Accounts",
+      "description": "Attempting to gain valid credentials for unauthorized access"
+    },
+    {
+      "technique": "T1133 - External Remote Services",
+      "description": "Targeting VPN infrastructure for initial access"
+    }
+  ],
+  
+  "threat_intelligence_context": {
+    "infrastructure_rotation": "Threat actor demonstrates capability to rotate infrastructure while maintaining tooling consistency",
+    "multi_vendor_targeting": "Campaign targets multiple enterprise security vendors suggesting broad reconnaissance",
+    "session_volume": "9M+ non-spoofable sessions indicates significant resources and persistence",
+    "fingerprint_consistency": "Identical client fingerprints across months of activity provides strong attribution signal"
+  },
+  
+  "references": {
+    "greynoise_report": "A Hidden Pattern Within Months of Credential-Based Attacks Against Palo Alto GlobalProtect",
+    "report_author": "Noah Stone, Head of Content, GreyNoise Intelligence",
+    "publication_date": "2025-12-04"
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "type": "bundle",
+  "id": "bundle--a8c3f9d2-5e7b-4c9a-8f1d-3e4b5c6d7e8f",
+  "objects": [
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--gnoise-2025-globalprotect-001",
+      "created": "2025-12-04T00:00:00.000Z",
+      "modified": "2025-12-04T00:00:00.000Z",
+      "name": "GNOISE-2025-GLOBALPROTECT-001",
+      "description": "Multi-month credential attack campaign targeting Palo Alto GlobalProtect and SonicWall SonicOS with consistent client fingerprints across infrastructure changes",
+      "threat_actor_types": ["unknown"],
+      "first_seen": "2025-09-20T00:00:00.000Z",
+      "last_seen": "2025-12-03T23:59:59.999Z",
+      "goals": ["credential-theft", "unauthorized-access"],
+      "sophistication": "intermediate",
+      "resource_level": "organization"
+    },
+    {
+      "type": "campaign",
+      "spec_version": "2.1",
+      "id": "campaign--globalprotect-credential-attacks",
+      "created": "2025-12-04T00:00:00.000Z",
+      "modified": "2025-12-04T00:00:00.000Z",
+      "name": "GlobalProtect/SonicWall Credential Attack Campaign",
+      "description": "Coordinated credential-based attacks against Palo Alto GlobalProtect portals and SonicWall SonicOS API endpoints. Campaign generated 9M+ HTTP sessions between September-December 2025 with consistent client fingerprints despite infrastructure rotation.",
+      "first_seen": "2025-09-20T00:00:00.000Z",
+      "last_seen": "2025-12-03T23:59:59.999Z",
+      "objective": "Gain unauthorized access to enterprise VPN and network security infrastructure through credential attacks"
+    },
+    {
+      "type": "attack-pattern",
+      "spec_version": "2.1",
+      "id": "attack-pattern--credential-bruteforce",
+      "created": "2025-12-04T00:00:00.000Z",
+      "modified": "2025-12-04T00:00:00.000Z",
+      "name": "Credential Bruteforce",
+      "description": "High-volume credential bruteforce and login attempts against VPN and API authentication endpoints",
+      "external_references": [
+        {
+          "source_name": "mitre-attack",
+          "external_id": "T1110",
+          "url": "https://attack.mitre.org/techniques/T1110/"
+        }
+      ]
+    },
+    {
+      "type": "infrastructure",
+      "spec_version": "2.1",
+      "id": "infrastructure--as43350",
+      "created": "2025-12-04T00:00:00.000Z",
+      "modified": "2025-12-04T00:00:00.000Z",
+      "name": "AS43350 - NForce Entertainment B.V.",
+      "description": "Source ASN for September-October 2025 GlobalProtect credential attacks",
+      "infrastructure_types": ["hosting"],
+      "first_seen": "2025-09-20T00:00:00.000Z",
+      "last_seen": "2025-10-15T23:59:59.999Z"
+    },
+    {
+      "type": "infrastructure",
+      "spec_version": "2.1",
+      "id": "infrastructure--as215929",
+      "created": "2025-12-04T00:00:00.000Z",
+      "modified": "2025-12-04T00:00:00.000Z",
+      "name": "AS215929 - Data Campus Limited",
+      "description": "Source ASN for September-October 2025 GlobalProtect credential attacks",
+      "infrastructure_types": ["hosting"],
+      "first_seen": "2025-09-20T00:00:00.000Z",
+      "last_seen": "2025-10-15T23:59:59.999Z"
+    },
+    {
+      "type": "infrastructure",
+      "spec_version": "2.1",
+      "id": "infrastructure--as209588",
+      "created": "2025-12-04T00:00:00.000Z",
+      "modified": "2025-12-04T00:00:00.000Z",
+      "name": "AS209588 - Flyservers S.A.",
+      "description": "Source ASN for September-October 2025 GlobalProtect credential attacks",
+      "infrastructure_types": ["hosting"],
+      "first_seen": "2025-09-20T00:00:00.000Z",
+      "last_seen": "2025-10-15T23:59:59.999Z"
+    },
+    {
+      "type": "infrastructure",
+      "spec_version": "2.1",
+      "id": "infrastructure--as211632",
+      "created": "2025-12-04T00:00:00.000Z",
+      "modified": "2025-12-04T00:00:00.000Z",
+      "name": "AS211632 - Internet Solutions & Innovations LTD",
+      "description": "Source ASN for September-October 2025 GlobalProtect credential attacks",
+      "infrastructure_types": ["hosting"],
+      "first_seen": "2025-09-20T00:00:00.000Z",
+      "last_seen": "2025-10-15T23:59:59.999Z"
+    },
+    {
+      "type": "infrastructure",
+      "spec_version": "2.1",
+      "id": "infrastructure--as201011",
+      "created": "2025-12-04T00:00:00.000Z",
+      "modified": "2025-12-04T00:00:00.000Z",
+      "name": "AS201011 - 3xK GmbH",
+      "description": "Source ASN for December 2025 GlobalProtect and SonicWall attacks. 7000+ IPs observed in concentrated spike on 2 December 2025",
+      "infrastructure_types": ["hosting"],
+      "first_seen": "2025-12-02T00:00:00.000Z",
+      "last_seen": "2025-12-03T23:59:59.999Z"
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--fingerprint-continuity",
+      "created": "2025-12-04T00:00:00.000Z",
+      "modified": "2025-12-04T00:00:00.000Z",
+      "name": "Shared Client Fingerprints Across Campaign Phases",
+      "description": "Three identical client fingerprints observed across all campaign phases (Sep-Oct and Dec 2025) indicating tooling continuity despite infrastructure changes",
+      "pattern": "[network-traffic:extensions.'http-request-ext'.client_fingerprint_consistency = true]",
+      "pattern_type": "stix",
+      "valid_from": "2025-09-20T00:00:00.000Z",
+      "valid_until": "2026-12-04T00:00:00.000Z",
+      "indicator_types": ["malicious-activity", "anomalous-activity"]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--as43350",
+      "created": "2025-12-04T00:00:00.000Z",
+      "modified": "2025-12-04T00:00:00.000Z",
+      "name": "AS43350 - Attack Source",
+      "pattern": "[autonomous-system:number = '43350']",
+      "pattern_type": "stix",
+      "valid_from": "2025-09-20T00:00:00.000Z",
+      "valid_until": "2026-12-04T00:00:00.000Z",
+      "indicator_types": ["malicious-activity"]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--as215929",
+      "created": "2025-12-04T00:00:00.000Z",
+      "modified": "2025-12-04T00:00:00.000Z",
+      "name": "AS215929 - Attack Source",
+      "pattern": "[autonomous-system:number = '215929']",
+      "pattern_type": "stix",
+      "valid_from": "2025-09-20T00:00:00.000Z",
+      "valid_until": "2026-12-04T00:00:00.000Z",
+      "indicator_types": ["malicious-activity"]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--as209588",
+      "created": "2025-12-04T00:00:00.000Z",
+      "modified": "2025-12-04T00:00:00.000Z",
+      "name": "AS209588 - Attack Source",
+      "pattern": "[autonomous-system:number = '209588']",
+      "pattern_type": "stix",
+      "valid_from": "2025-09-20T00:00:00.000Z",
+      "valid_until": "2026-12-04T00:00:00.000Z",
+      "indicator_types": ["malicious-activity"]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--as211632",
+      "created": "2025-12-04T00:00:00.000Z",
+      "modified": "2025-12-04T00:00:00.000Z",
+      "name": "AS211632 - Attack Source",
+      "pattern": "[autonomous-system:number = '211632']",
+      "pattern_type": "stix",
+      "valid_from": "2025-09-20T00:00:00.000Z",
+      "valid_until": "2026-12-04T00:00:00.000Z",
+      "indicator_types": ["malicious-activity"]
+    },
+    {
+      "type": "indicator",
+      "spec_version": "2.1",
+      "id": "indicator--as201011",
+      "created": "2025-12-04T00:00:00.000Z",
+      "modified": "2025-12-04T00:00:00.000Z",
+      "name": "AS201011 - Attack Source",
+      "pattern": "[autonomous-system:number = '201011']",
+      "pattern_type": "stix",
+      "valid_from": "2025-12-02T00:00:00.000Z",
+      "valid_until": "2026-12-04T00:00:00.000Z",
+      "indicator_types": ["malicious-activity"]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--campaign-uses-infrastructure-1",
+      "created": "2025-12-04T00:00:00.000Z",
+      "modified": "2025-12-04T00:00:00.000Z",
+      "relationship_type": "uses",
+      "source_ref": "campaign--globalprotect-credential-attacks",
+      "target_ref": "infrastructure--as43350"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--campaign-uses-infrastructure-2",
+      "created": "2025-12-04T00:00:00.000Z",
+      "modified": "2025-12-04T00:00:00.000Z",
+      "relationship_type": "uses",
+      "source_ref": "campaign--globalprotect-credential-attacks",
+      "target_ref": "infrastructure--as215929"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--campaign-uses-infrastructure-3",
+      "created": "2025-12-04T00:00:00.000Z",
+      "modified": "2025-12-04T00:00:00.000Z",
+      "relationship_type": "uses",
+      "source_ref": "campaign--globalprotect-credential-attacks",
+      "target_ref": "infrastructure--as209588"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--campaign-uses-infrastructure-4",
+      "created": "2025-12-04T00:00:00.000Z",
+      "modified": "2025-12-04T00:00:00.000Z",
+      "relationship_type": "uses",
+      "source_ref": "campaign--globalprotect-credential-attacks",
+      "target_ref": "infrastructure--as211632"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--campaign-uses-infrastructure-5",
+      "created": "2025-12-04T00:00:00.000Z",
+      "modified": "2025-12-04T00:00:00.000Z",
+      "relationship_type": "uses",
+      "source_ref": "campaign--globalprotect-credential-attacks",
+      "target_ref": "infrastructure--as201011"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--campaign-uses-attack-pattern",
+      "created": "2025-12-04T00:00:00.000Z",
+      "modified": "2025-12-04T00:00:00.000Z",
+      "relationship_type": "uses",
+      "source_ref": "campaign--globalprotect-credential-attacks",
+      "target_ref": "attack-pattern--credential-bruteforce"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--threat-actor-uses-campaign",
+      "created": "2025-12-04T00:00:00.000Z",
+      "modified": "2025-12-04T00:00:00.000Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "campaign--globalprotect-credential-attacks",
+      "target_ref": "threat-actor--gnoise-2025-globalprotect-001"
+    }
+  ]
+}

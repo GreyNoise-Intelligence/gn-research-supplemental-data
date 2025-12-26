@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "title": "ColdFusion Exploitation Campaign",
+    "date": "2025-12-26",
+    "source": "GreyNoise",
+    "campaign_window": {
+      "start": "2025-12-23T07:58:52Z",
+      "end": "2025-12-26T10:21:10Z"
+    },
+    "severity": "high",
+    "confidence": "high"
+  },
+  "threat_actor": {
+    "name": "Unknown",
+    "infrastructure": "CTG Server Limited",
+    "country": "Japan",
+    "asn": "AS152194"
+  },
+  "iocs": {
+    "ip_addresses": {
+      "critical": ["134.122.136.119", "134.122.136.96"],
+      "secondary": ["23.234.85.20", "38.225.206.87", "38.225.206.88", "172.81.132.99"],
+      "cloudflare_proxied": ["172.68.119.26", "162.159.110.4"]
+    },
+    "asn": ["AS152194", "AS11878", "AS150654", "AS27176"],
+    "domains": {
+      "oast_services": ["*.oast.pro", "*.oast.site", "*.oast.me", "*.oast.online", "*.oast.fun", "*.oast.live"],
+      "sample_callbacks": [
+        "d4rrp47fn3bphsg36ktgrnxs88i793xh8.oast.fun",
+        "d4rrp47fn3bphsg36ktgwmhg6gs184cgp.oast.fun",
+        "d4ttv6m52uktrcfij1mg4z1sxco79xbrx.oast.site",
+        "d4ttv6m52uktrcfij1mgretwywufsexrr.oast.site",
+        "d560h4t0mm9g3ve8u8007go4bggx4mfip.oast.pro",
+        "d560h4t0mm9g3ve8u800f5ujdfhi58ty7.oast.pro",
+        "d565pronu06u9lln5rug1mt8wad5fbgrk.oast.pro",
+        "d565pronu06u9lln5rugt8mt8gngf4m1m.oast.pro",
+        "d56bg80or2rkvmbdrmq04dqz3ahrwu8ft.oast.fun",
+        "d56bg80or2rkvmbdrmq0gszxyj9npxnx5.oast.fun"
+      ]
+    },
+    "network_fingerprints": {
+      "ja4t": [
+        "64240_2-4-8-1-3_1460_7",
+        "64240_2-4-8-1-3_1360_7",
+        "64620_2-4-8-1-3_1436_7",
+        "64740_2-4-8-1-3_1245_7",
+        "65495_2-4-8-1-3_65495_7"
+      ],
+      "ja4h": [
+        "po11nn060000_4ea4093e6290_000000000000_000000000000",
+        "ge11nn040000_532a1ee47909_000000000000_000000000000",
+        "ge11nn06en00_0e5d97bc8ad6_000000000000_000000000000",
+        "po11nn130000_772c0078db7b_000000000000_000000000000"
+      ]
+    }
+  },
+  "cves_targeted": [
+    "CVE-2023-26359",
+    "CVE-2023-38205",
+    "CVE-2023-44353",
+    "CVE-2023-38203",
+    "CVE-2023-38204",
+    "CVE-2023-29298",
+    "CVE-2023-29300",
+    "CVE-2023-26347",
+    "CVE-2024-20767",
+    "CVE-2023-44352"
+  ],
+  "detection": {
+    "regex_patterns": [
+      "ldap://[a-z0-9]{33}\\.oast\\.",
+      "wddxPacket.*JdbcRowSetImpl",
+      "com\\.sun\\.rowset\\.JdbcRowSetImpl",
+      "_variables.*_metadata.*classname.*\\.\\./",
+      "classname.*\\.\\./"
+    ],
+    "ports": {
+      "outbound_alert": [389, 636]
+    }
+  },
+  "mitre_attack": {
+    "tactics": ["Initial Access", "Execution"],
+    "techniques": [
+      {
+        "id": "T1190",
+        "name": "Exploit Public-Facing Application"
+      },
+      {
+        "id": "T1059",
+        "name": "Command and Scripting Interpreter"
+      }
+    ]
+  }
+}

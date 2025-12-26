@@ -1,0 +1,61 @@
+# ColdFusion Campaign IoCs - December 2025
+# Generated: 2025-12-26
+# Source: GreyNoise Threat Intelligence
+
+###################
+# IP ADDRESSES
+###################
+
+# Primary Threat Actor (CTG Server Limited, Japan)
+# PRIORITY: CRITICAL - Block immediately
+134.122.136.119
+134.122.136.96
+
+# Secondary Actors
+23.234.85.20
+38.225.206.87
+38.225.206.88
+172.81.132.99
+
+# Cloudflare-Proxied (investigate before blocking)
+# 172.68.119.26
+# 162.159.110.4
+
+###################
+# ASN
+###################
+
+AS152194
+AS11878
+AS150654
+AS27176
+
+###################
+# DNS BLOCKLIST
+###################
+
+*.oast.pro
+*.oast.site
+*.oast.me
+*.oast.online
+*.oast.fun
+*.oast.live
+
+###################
+# JA4T FINGERPRINTS
+###################
+
+64240_2-4-8-1-3_1460_7
+64240_2-4-8-1-3_1360_7
+64620_2-4-8-1-3_1436_7
+64740_2-4-8-1-3_1245_7
+65495_2-4-8-1-3_65495_7
+
+###################
+# JA4H FINGERPRINTS
+###################
+
+po11nn060000_4ea4093e6290_000000000000_000000000000
+ge11nn040000_532a1ee47909_000000000000_000000000000
+ge11nn06en00_0e5d97bc8ad6_000000000000_000000000000
+po11nn130000_772c0078db7b_000000000000_000000000000

@@ -1,0 +1,137 @@
+{
+  "title": "Ollama Honeypot Threat Intelligence - Q4 2025",
+  "generated": "2026-01-08",
+  "source": "GreyNoise Silent Honeypot",
+  "timeframe": {
+    "start": "2025-10-01",
+    "end": "2026-01-08"
+  },
+  "summary": {
+    "total_sessions": 91403,
+    "unique_source_ips": 182,
+    "unique_asns": 62,
+    "countries": 27,
+    "campaigns_identified": 3
+  },
+  "campaigns": {
+    "ssrf_exploitation": {
+      "description": "Coordinated SSRF attacks via Ollama model pull and Twilio SMS webhook vectors",
+      "sessions": 1130,
+      "technique": "Server-Side Request Forgery via model registry manipulation",
+      "callback_infrastructure": "ProjectDiscovery OAST (interact.sh successor)",
+      "ja4h_signature": "po11nn060000_4ea4093e6290_000000000000_000000000000",
+      "ja4t_signature": "64240_2-4-8-1-3_1460_7",
+      "os_fingerprint": "WSL Ubuntu 22.04"
+    },
+    "llm_enumeration": {
+      "description": "Large-scale LLM endpoint enumeration and proxy discovery",
+      "sessions": 80469,
+      "technique": "Automated probing of 73+ model endpoints via OpenAI/Gemini API formats",
+      "test_queries": ["How many states are there in the United States?", "How many letter r are in the word strawberry?"],
+      "models_probed": ["gpt-4o", "claude-3-5-sonnet", "claude-3-opus", "claude-3-haiku", "llama3", "deepseek-r1", "gemini-pro", "mistral", "qwen2.5", "grok-beta"]
+    },
+    "opportunistic_web_exploitation": {
+      "description": "Automated vulnerability scanner traffic including SQLi, path traversal, RCE",
+      "sessions": 9774,
+      "techniques": ["Blind time-based SQLi", "Path traversal", "PHP eval RCE", "File upload webshells"]
+    }
+  },
+  "indicators": {
+    "ssrf_campaign_ips": [
+      {"ip": "103.60.12.200", "asn": "AS27176", "country": "United States"},
+      {"ip": "103.60.12.224", "asn": "AS27176", "country": "United States"},
+      {"ip": "107.173.135.116", "asn": "AS36352", "country": "United States"},
+      {"ip": "112.134.208.214", "asn": "AS9329", "country": "Sri Lanka"},
+      {"ip": "113.211.213.96", "asn": "AS9534", "country": "Malaysia"},
+      {"ip": "114.241.214.95", "asn": "AS4808", "country": "China"},
+      {"ip": "134.122.136.119", "asn": "AS152194", "country": "Japan"},
+      {"ip": "134.122.136.86", "asn": "AS152194", "country": "Japan"},
+      {"ip": "134.122.136.96", "asn": "AS152194", "country": "Japan"},
+      {"ip": "134.209.148.243", "asn": "AS14061", "country": "India"},
+      {"ip": "138.199.53.249", "asn": "AS60068", "country": "Romania"},
+      {"ip": "138.68.248.202", "asn": "AS14061", "country": "United States"},
+      {"ip": "141.164.197.30", "asn": "AS25019", "country": "Saudi Arabia"},
+      {"ip": "144.48.39.108", "asn": "AS136557", "country": "Australia"},
+      {"ip": "144.91.66.213", "asn": "AS51167", "country": "France"},
+      {"ip": "146.70.124.165", "asn": "AS9009", "country": "Romania"},
+      {"ip": "146.70.124.188", "asn": "AS9009", "country": "Romania"},
+      {"ip": "159.223.35.231", "asn": "AS14061", "country": "Singapore"},
+      {"ip": "160.187.56.10", "asn": "AS153329", "country": "Bangladesh"},
+      {"ip": "160.187.56.115", "asn": "AS153329", "country": "Bangladesh"},
+      {"ip": "160.187.56.121", "asn": "AS153329", "country": "Bangladesh"},
+      {"ip": "160.187.56.125", "asn": "AS153329", "country": "Bangladesh"},
+      {"ip": "160.187.56.17", "asn": "AS153329", "country": "Bangladesh"},
+      {"ip": "160.187.56.40", "asn": "AS153329", "country": "Bangladesh"},
+      {"ip": "160.187.56.55", "asn": "AS153329", "country": "Bangladesh"},
+      {"ip": "160.187.56.67", "asn": "AS153329", "country": "Bangladesh"},
+      {"ip": "169.150.203.62", "asn": "AS212238", "country": "United States"},
+      {"ip": "172.245.5.123", "asn": "AS36352", "country": "United States"},
+      {"ip": "172.81.132.99", "asn": "AS27176", "country": "United States"},
+      {"ip": "172.81.133.172", "asn": "AS27176", "country": "United States"},
+      {"ip": "18.144.31.213", "asn": "AS16509", "country": "United States"},
+      {"ip": "185.213.155.159", "asn": "AS39351", "country": "Germany"},
+      {"ip": "194.163.180.145", "asn": "AS51167", "country": "France"},
+      {"ip": "194.165.16.71", "asn": "AS48721", "country": "Lithuania"},
+      {"ip": "194.180.158.18", "asn": "AS39798", "country": "United Kingdom"},
+      {"ip": "195.154.220.76", "asn": "AS12876", "country": "France"},
+      {"ip": "208.131.130.30", "asn": "AS13213", "country": "United States"},
+      {"ip": "23.234.85.20", "asn": "AS11878", "country": "Canada"},
+      {"ip": "3.133.89.0", "asn": "AS16509", "country": "United States"},
+      {"ip": "34.91.29.122", "asn": "AS396982", "country": "Netherlands"},
+      {"ip": "37.120.222.160", "asn": "AS9009", "country": "Germany"},
+      {"ip": "37.120.246.132", "asn": "AS9009", "country": "Romania"},
+      {"ip": "37.120.246.157", "asn": "AS9009", "country": "Romania"},
+      {"ip": "38.225.206.85", "asn": "AS150654", "country": "India"},
+      {"ip": "38.225.206.87", "asn": "AS150654", "country": "India"},
+      {"ip": "38.225.206.88", "asn": "AS150654", "country": "India"},
+      {"ip": "38.225.206.89", "asn": "AS150654", "country": "India"},
+      {"ip": "38.225.206.91", "asn": "AS150654", "country": "India"},
+      {"ip": "38.225.206.94", "asn": "AS150654", "country": "India"},
+      {"ip": "38.60.220.133", "asn": "AS138915", "country": "South Korea"},
+      {"ip": "44.200.172.246", "asn": "AS14618", "country": "United States"},
+      {"ip": "44.201.64.126", "asn": "AS14618", "country": "United States"},
+      {"ip": "44.202.142.9", "asn": "AS14618", "country": "United States"},
+      {"ip": "44.246.215.141", "asn": "AS16509", "country": "United States"},
+      {"ip": "45.134.225.36", "asn": "AS213438", "country": "Netherlands"},
+      {"ip": "51.77.116.46", "asn": "AS16276", "country": "United Kingdom"},
+      {"ip": "52.53.129.243", "asn": "AS16509", "country": "United States"},
+      {"ip": "54.193.219.174", "asn": "AS16509", "country": "United States"},
+      {"ip": "54.67.74.77", "asn": "AS16509", "country": "United States"},
+      {"ip": "68.235.46.30", "asn": "AS11878", "country": "United States"},
+      {"ip": "79.132.128.202", "asn": "AS58329", "country": "Netherlands"},
+      {"ip": "89.248.163.141", "asn": "AS202425", "country": "Netherlands"}
+    ],
+    "llm_enumeration_ips": [
+      {"ip": "45.88.186.70", "asn": "AS210558", "country": "United States", "sessions": 49955, "greynoise_sensor_hits": "2M+"},
+      {"ip": "204.76.203.125", "asn": "AS51396", "country": "Netherlands", "sessions": 30514, "greynoise_sensor_hits": "2M+"}
+    ],
+    "oast_domains": {
+      "tlds": [".oast.live", ".oast.me", ".oast.online", ".oast.pro", ".oast.fun", ".oast.site", ".oast.today"],
+      "campaign_identifiers": ["6iseh", "7onpk", "7pu5a", "d4fec", "l4fec", "ug386", "o3t4g"],
+      "total_unique_domains": 580,
+      "block_pattern": "*.oast.live, *.oast.me, *.oast.online, *.oast.pro, *.oast.fun, *.oast.site, *.oast.today"
+    },
+    "network_signatures": {
+      "ja4h": ["po11nn060000_4ea4093e6290_000000000000_000000000000"],
+      "ja4t": ["64240_2-4-8-1-3_1460_7", "65495_2-4-8-1-3_65495_7"]
+    }
+  },
+  "high_priority_asns": [
+    {"asn": "AS152194", "name": "CTG Server Limited", "country": "Japan", "sessions": 639, "assessment": "Primary SSRF campaign infrastructure"},
+    {"asn": "AS210558", "name": "1337 Services GmbH", "country": "United States", "sessions": 49955, "assessment": "LLM enumeration operator"},
+    {"asn": "AS51396", "name": "Pfcloud UG", "country": "Netherlands", "sessions": 30514, "assessment": "LLM enumeration operator"},
+    {"asn": "AS9009", "name": "M247 Europe SRL", "country": "Romania/Germany", "sessions": 270, "assessment": "VPS hosting for SSRF attacks"},
+    {"asn": "AS153329", "name": "Bangladesh ISP", "country": "Bangladesh", "sessions": 45, "assessment": "Coordinated SSRF scanning cluster"}
+  ],
+  "detection_rules": {
+    "ssrf_model_pull": "request_body contains '\"name\":' AND request_body contains 'oast.'",
+    "ssrf_twilio": "request_body contains 'MediaUrl0' AND request_body contains 'oast.'",
+    "llm_enumeration": "request_body contains '\"messages\":' AND request_body contains '\"content\":' AND rapid_request_pattern",
+    "sqli_blind": "request_body contains 'SLEEP(' OR request_body contains 'WAITFOR DELAY'"
+  },
+  "attribution_assessment": {
+    "ssrf_campaign": "Likely security researcher/bug bounty activity given OAST usage and methodical approach. Moderate confidence.",
+    "llm_enumeration": "Professional threat actor conducting reconnaissance for future exploitation. Infrastructure overlap with known CVE scanning operations. High confidence.",
+    "web_exploitation": "Automated scanner noise, multiple uncoordinated actors. Low confidence for single attribution."
+  }
+}

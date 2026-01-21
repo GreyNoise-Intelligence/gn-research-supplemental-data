@@ -1,0 +1,98 @@
+ip_address,sessions,threat_type,tags,asn,country,confidence,notes
+193.46.255.72,554,Coordinated Campaign,Web Crawler,AS47890,Romania,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+78.128.114.42,534,Coordinated Campaign,Web Crawler,AS50360,Bulgaria,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+15.222.254.236,528,Coordinated Campaign,Web Crawler,AS16509,Canada,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+43.206.141.226,436,Coordinated Campaign,Web Crawler;ENV Crawler,AS16509,Japan,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+3.96.145.177,327,Coordinated Campaign,Generic Sensitive File Access Attempt;Git Config Crawler;Web Crawler,AS16509,Canada,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+99.79.123.87,207,Coordinated Campaign,Web Crawler,AS16509,Canada,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+35.182.109.39,138,Coordinated Campaign,Web Crawler,AS16509,Canada,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+3.76.41.205,97,Coordinated Campaign,Web Crawler,AS16509,Germany,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+193.142.147.209,81,Coordinated Campaign,React Server Components CVE-2025-55182 RCE Attempt;Web Crawler,AS213438,Netherlands,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+209.38.94.78,66,Coordinated Campaign,React Server Components CVE-2025-55182 RCE Attempt;Web Crawler,AS14061,Australia,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+185.12.59.118,62,Coordinated Campaign,Web Crawler,AS50304,Norway,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+185.156.73.62,51,Coordinated Campaign,Go HTTP Client;Web Crawler,AS211736,Netherlands,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+44.220.185.95,49,Coordinated Campaign,Web Crawler,AS14618,United States,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+78.153.140.179,47,Coordinated Campaign,Generic PHPInfo Access Attempt;Web Crawler,AS202306,United Kingdom,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+185.156.73.167,44,Coordinated Campaign,Web Crawler;Go HTTP Client,AS211736,Netherlands,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+92.63.197.23,42,Coordinated Campaign,Go HTTP Client;Web Crawler,AS211736,Netherlands,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+185.156.73.166,41,Coordinated Campaign,Go HTTP Client;Web Crawler,AS211736,Netherlands,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+152.53.22.30,40,Coordinated Campaign,Web Crawler,AS197540,Germany,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+35.216.172.131,39,Coordinated Campaign,XMCO.fr;Web Crawler;Laravel Telescope Scanner,AS15169,Switzerland,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+195.177.94.73,38,Coordinated Campaign,Web Crawler;ENV Crawler,AS214961,France,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+92.63.197.92,37,Coordinated Campaign,Go HTTP Client;Web Crawler,AS211736,Netherlands,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+46.101.212.101,36,Coordinated Campaign,Web Crawler,AS14061,Germany,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+139.59.214.158,34,Coordinated Campaign,Web Crawler,AS14061,Germany,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+92.63.197.59,29,Coordinated Campaign,Go HTTP Client;Web Crawler,AS211736,Netherlands,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+178.16.55.174,29,Coordinated Campaign,Web Crawler,AS214976,Estonia,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+138.197.126.127,28,Coordinated Campaign,Web Crawler,AS14061,United States,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+165.154.163.199,28,Coordinated Campaign,Sitemap Crawler;Web Crawler;sitemap.xml Crawler,AS135377,United States,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+92.63.197.55,27,Coordinated Campaign,Go HTTP Client;Web Crawler,AS211736,Netherlands,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+178.16.55.170,27,Coordinated Campaign,Web Crawler,AS214943,Estonia,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+206.189.158.53,26,Coordinated Campaign,Carries HTTP Referer;WebDAV Scanner;Web Crawler,AS14061,Singapore,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+37.77.150.39,25,Coordinated Campaign,Fortinet SSL VPN Bruteforcer;Web Crawler,AS198953,Russia,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+99.79.52.42,25,Coordinated Campaign,Web Crawler;ENV Crawler,AS16509,Canada,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+139.59.210.77,24,Coordinated Campaign,Web Crawler;VMware Version Check,AS14061,Germany,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+44.220.188.48,21,Coordinated Campaign,Web Crawler,AS14618,United States,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+80.94.95.226,21,Coordinated Campaign,Web Crawler;Carries HTTP Referer;ASUS Router HTTP Login Attempt,AS204428,Romania,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+178.16.55.195,21,Coordinated Campaign,Web Crawler,AS214976,Estonia,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+178.16.55.177,20,Coordinated Campaign,Web Crawler,AS214976,Estonia,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+178.16.55.192,20,Coordinated Campaign,Web Crawler,AS214943,Estonia,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+178.16.55.196,20,Coordinated Campaign,Web Crawler,AS214943,Estonia,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+164.52.0.93,20,Coordinated Campaign,Web Crawler,AS63199,Japan,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+204.76.203.125,19,Coordinated Campaign,Generic Sensitive File Access Attempt;Generic /proc Enumeration Attempt;Web Crawler;Generic Path Traversal Attempt,AS51396,Netherlands,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+118.194.228.167,17,Coordinated Campaign,Web Crawler,AS135377,Japan,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+178.16.55.166,17,Coordinated Campaign,Web Crawler,AS214976,Estonia,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+178.16.55.210,16,Coordinated Campaign,Web Crawler,AS214976,Estonia,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+52.225.81.246,16,Coordinated Campaign,Web Crawler,AS8075,United States,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+165.154.36.91,16,Coordinated Campaign,Favicon Scanner;Carries HTTP Referer;Web Crawler,AS135377,United States,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+193.143.1.30,16,Coordinated Campaign,Cisco SSL VPN Bruteforcer;Web Crawler,AS198953,Russia,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+13.83.11.162,15,Coordinated Campaign,Web Crawler,AS8075,United States,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+172.184.113.203,14,Coordinated Campaign,Web Crawler;MCP and SSE endpoint scanning,AS8075,United States,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+178.16.55.191,13,Coordinated Campaign,Web Crawler,AS214976,Estonia,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+167.99.185.176,11,Coordinated Campaign,Git Config Crawler;Generic Sensitive File Access Attempt;Web Crawler,AS14061,Canada,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+195.3.222.78,11,Coordinated Campaign,Web Crawler;React Server Components CVE-2025-55182 RCE Attempt,AS201814,Poland,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+193.24.208.65,11,Coordinated Campaign,Web Crawler,AS35042,Germany,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+62.210.198.226,10,Coordinated Campaign,Web Crawler,AS12876,France,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+207.154.215.0,9,Coordinated Campaign,Web Crawler,AS14061,Germany,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+165.232.94.223,9,Coordinated Campaign,WebDAV Scanner;Carries HTTP Referer;Web Crawler,AS14061,Netherlands,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+198.211.97.27,9,Coordinated Campaign,Web Crawler,AS14061,United States,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+178.128.63.180,8,Coordinated Campaign,Web Crawler,AS14061,Singapore,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+134.199.173.109,8,Coordinated Campaign,Web Crawler,AS14061,Australia,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+146.190.93.166,8,Coordinated Campaign,Web Crawler,AS14061,Singapore,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+167.71.215.225,8,Coordinated Campaign,Web Crawler,AS14061,Singapore,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+34.76.141.50,8,Coordinated Campaign,Web Crawler;Python Requests Client,AS396982,Belgium,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+23.234.110.50,8,Coordinated Campaign,Palo Alto Networks Login Scanner;Web Crawler,AS11878,United States,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+35.216.144.195,8,Coordinated Campaign,Web Crawler;Laravel Telescope Scanner;XMCO.fr,AS15169,Switzerland,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+213.199.48.226,8,Coordinated Campaign,WebDAV Scanner;Web Crawler;Carries HTTP Referer,AS51167,France,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+67.205.136.94,7,Coordinated Campaign,Favicon Scanner;Web Crawler,AS14061,United States,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+64.225.60.187,7,Coordinated Campaign,Web Crawler,AS14061,United States,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+161.35.34.183,7,Coordinated Campaign,Web Crawler,AS14061,United Kingdom,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+202.61.253.53,7,Coordinated Campaign,,AS197540,Germany,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+178.128.192.187,7,Coordinated Campaign,Web Crawler,AS14061,Germany,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+128.14.237.130,7,Coordinated Campaign,Sitemap Crawler;sitemap.xml Crawler;Web Crawler,AS135377,Taiwan,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+84.239.45.134,7,Coordinated Campaign,Cisco ASA Scanner;Web Crawler,AS212238,United States,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+34.22.151.18,7,Coordinated Campaign,Python Requests Client;Web Crawler,AS396982,Belgium,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+84.239.43.24,7,Coordinated Campaign,Web Crawler;Palo Alto Networks Login Scanner,AS212238,United States,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+134.122.68.99,7,Coordinated Campaign,Web Crawler,AS14061,Germany,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+35.216.189.16,7,Coordinated Campaign,Web Crawler,AS15169,Switzerland,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+78.153.140.224,7,Coordinated Campaign,Web Crawler;ENV Crawler,AS202306,United Kingdom,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+23.234.80.173,7,Coordinated Campaign,Web Crawler;Palo Alto Networks Login Scanner,AS11878,United States,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+68.235.46.154,7,Coordinated Campaign,Web Crawler;Palo Alto Networks Login Scanner,AS11878,United States,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+34.34.132.221,7,Coordinated Campaign,Python Requests Client;Web Crawler,AS396982,Belgium,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+202.61.197.56,7,Coordinated Campaign,Web Crawler,AS197540,Germany,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+47.253.116.19,7,Coordinated Campaign,DNS Over HTTPS Scanner;Web Crawler;Generic Sensitive File Access Attempt,AS45102,United States,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+165.154.11.52,7,Coordinated Campaign,Web Crawler,AS135377,Nigeria,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+118.193.44.169,6,Coordinated Campaign,Web Crawler;Jboss Application Server CVE-2017-12149 Check,AS135377,Hong Kong,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+34.79.182.243,6,Coordinated Campaign,Python Requests Client;Web Crawler,AS396982,Belgium,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+64.226.76.102,6,Coordinated Campaign,Web Crawler,AS14061,Germany,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+37.19.197.166,6,Coordinated Campaign,Web Crawler;Cisco ASA Scanner,AS212238,United States,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+84.239.43.7,6,Coordinated Campaign,Web Crawler;Palo Alto Networks Login Scanner,AS212238,United States,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+159.203.6.90,6,Coordinated Campaign,Generic Sensitive File Access Attempt;Web Crawler;Git Config Crawler,AS14061,Canada,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+159.89.156.58,6,Coordinated Campaign,Web Crawler,AS14061,United States,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+178.16.55.167,6,Coordinated Campaign,Web Crawler,AS214943,Estonia,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+45.134.142.200,6,Coordinated Campaign,Web Crawler;Palo Alto Networks Login Scanner,AS212238,United States,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+68.235.46.14,6,Coordinated Campaign,Palo Alto Networks Login Scanner;Web Crawler,AS11878,United States,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+84.239.41.197,6,Coordinated Campaign,Web Crawler;Palo Alto Networks Login Scanner,AS212238,United States,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+152.42.202.56,6,Coordinated Campaign,Web Crawler,AS14061,Singapore,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+5.189.158.177,6,Coordinated Campaign,,AS51167,France,HIGH,JA4T 65495_2-4-8-1-3_65495_7
+78.153.140.250,6,Coordinated Campaign,Web Crawler;Androxgh0st,AS202306,United Kingdom,HIGH,JA4T 65495_2-4-8-1-3_65495_7

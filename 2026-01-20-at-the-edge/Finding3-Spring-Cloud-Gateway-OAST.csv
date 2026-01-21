@@ -1,0 +1,52 @@
+ip_address,sessions,threat_type,tags,asn,country,confidence,notes
+146.70.116.218,27,Spring Cloud Gateway OAST,Spring Cloud Gateway Code Injection Attempt;Contains Well-known Out-of-band Interaction Domain;Web Crawler,AS9009,Austria,HIGH,Top OAST callback source
+206.189.179.170,24,Spring Cloud Gateway OAST,Spring Cloud Gateway Code Injection Attempt;Web Crawler;Contains Well-known Out-of-band Interaction Domain,AS14061,United States,HIGH,DigitalOcean
+192.81.219.244,21,Spring Cloud Gateway OAST,Contains Well-known Out-of-band Interaction Domain;Spring Cloud Gateway Code Injection Attempt;Web Crawler,AS14061,United States,HIGH,DigitalOcean
+68.183.134.171,21,Spring Cloud Gateway OAST,Contains Well-known Out-of-band Interaction Domain;Spring Cloud Gateway Code Injection Attempt;Web Crawler,AS14061,United States,HIGH,DigitalOcean
+192.241.153.144,20,Spring Cloud Gateway OAST,Spring Cloud Gateway Code Injection Attempt;Web Crawler;Contains Well-known Out-of-band Interaction Domain,AS14061,United States,HIGH,DigitalOcean
+137.184.27.226,20,Spring Cloud Gateway OAST,Web Crawler;Spring Cloud Gateway Code Injection Attempt;Contains Well-known Out-of-band Interaction Domain,AS14061,United States,HIGH,DigitalOcean
+157.230.63.116,20,Spring Cloud Gateway OAST,Web Crawler;Spring Cloud Gateway Code Injection Attempt;Contains Well-known Out-of-band Interaction Domain,AS14061,United States,HIGH,DigitalOcean
+64.227.19.229,18,Spring Cloud Gateway OAST,Spring Cloud Gateway Code Injection Attempt;Web Crawler;Contains Well-known Out-of-band Interaction Domain,AS14061,United States,HIGH,DigitalOcean
+147.182.218.227,17,Spring Cloud Gateway OAST,Spring Cloud Gateway Code Injection Attempt;Contains Well-known Out-of-band Interaction Domain;Web Crawler,AS14061,United States,HIGH,DigitalOcean
+82.29.53.187,17,Spring Cloud Gateway OAST,Web Crawler;Spring Cloud Gateway Code Injection Attempt,AS142036,United States,HIGH,
+24.144.96.194,17,Spring Cloud Gateway OAST,Web Crawler;Spring Cloud Gateway Code Injection Attempt;Contains Well-known Out-of-band Interaction Domain,AS14061,United States,HIGH,DigitalOcean
+167.99.231.210,16,Spring Cloud Gateway OAST,Contains Well-known Out-of-band Interaction Domain;Spring Cloud Gateway Code Injection Attempt;Web Crawler,AS14061,United States,HIGH,DigitalOcean
+146.190.216.39,16,Spring Cloud Gateway OAST,Web Crawler;Contains Well-known Out-of-band Interaction Domain;Spring Cloud Gateway Code Injection Attempt,AS14061,United States,HIGH,DigitalOcean
+69.55.49.218,16,Spring Cloud Gateway OAST,Web Crawler;Contains Well-known Out-of-band Interaction Domain;Spring Cloud Gateway Code Injection Attempt,AS14061,United States,HIGH,DigitalOcean
+64.227.1.178,16,Spring Cloud Gateway OAST,Spring Cloud Gateway Code Injection Attempt;Contains Well-known Out-of-band Interaction Domain;Web Crawler,AS14061,United States,HIGH,DigitalOcean
+142.93.240.74,16,Spring Cloud Gateway OAST,Web Crawler;Contains Well-known Out-of-band Interaction Domain;Spring Cloud Gateway Code Injection Attempt,AS14061,United States,HIGH,DigitalOcean
+146.190.208.7,16,Spring Cloud Gateway OAST,Web Crawler;Contains Well-known Out-of-band Interaction Domain;Spring Cloud Gateway Code Injection Attempt,AS14061,United States,HIGH,DigitalOcean
+167.71.19.205,16,Spring Cloud Gateway OAST,Web Crawler;Contains Well-known Out-of-band Interaction Domain;Spring Cloud Gateway Code Injection Attempt,AS14061,United States,HIGH,DigitalOcean
+147.182.217.57,16,Spring Cloud Gateway OAST,Contains Well-known Out-of-band Interaction Domain;Spring Cloud Gateway Code Injection Attempt;Web Crawler,AS14061,United States,HIGH,DigitalOcean
+167.172.146.80,15,Spring Cloud Gateway OAST,Spring Cloud Gateway Code Injection Attempt;Contains Well-known Out-of-band Interaction Domain;Web Crawler,AS14061,United States,HIGH,DigitalOcean
+161.35.55.26,15,Spring Cloud Gateway OAST,Web Crawler;Spring Cloud Gateway Code Injection Attempt;Contains Well-known Out-of-band Interaction Domain,AS14061,United States,HIGH,DigitalOcean
+157.230.236.117,15,Spring Cloud Gateway OAST,Spring Cloud Gateway Code Injection Attempt;Web Crawler;Contains Well-known Out-of-band Interaction Domain,AS14061,United States,HIGH,DigitalOcean
+64.227.15.192,15,Spring Cloud Gateway OAST,Web Crawler;Contains Well-known Out-of-band Interaction Domain;Spring Cloud Gateway Code Injection Attempt,AS14061,United States,HIGH,DigitalOcean
+142.93.60.210,15,Spring Cloud Gateway OAST,Contains Well-known Out-of-band Interaction Domain;Web Crawler;Spring Cloud Gateway Code Injection Attempt,AS14061,United States,HIGH,DigitalOcean
+137.184.140.230,15,Spring Cloud Gateway OAST,Spring Cloud Gateway Code Injection Attempt;Web Crawler;Contains Well-known Out-of-band Interaction Domain,AS14061,United States,HIGH,DigitalOcean
+137.184.50.122,14,Spring Cloud Gateway OAST,Web Crawler;Spring Cloud Gateway Code Injection Attempt;Contains Well-known Out-of-band Interaction Domain,AS14061,United States,HIGH,DigitalOcean
+134.209.119.208,14,Spring Cloud Gateway OAST,Web Crawler;Spring Cloud Gateway Code Injection Attempt;Contains Well-known Out-of-band Interaction Domain,AS14061,United States,HIGH,DigitalOcean
+137.184.30.184,14,Spring Cloud Gateway OAST,Contains Well-known Out-of-band Interaction Domain;Web Crawler;Spring Cloud Gateway Code Injection Attempt,AS14061,United States,HIGH,DigitalOcean
+161.35.122.149,14,Spring Cloud Gateway OAST,Contains Well-known Out-of-band Interaction Domain;Web Crawler;Spring Cloud Gateway Code Injection Attempt,AS14061,United States,HIGH,DigitalOcean
+206.189.182.35,14,Spring Cloud Gateway OAST,Web Crawler;Contains Well-known Out-of-band Interaction Domain;Spring Cloud Gateway Code Injection Attempt,AS14061,United States,HIGH,DigitalOcean
+143.198.182.182,14,Spring Cloud Gateway OAST,Contains Well-known Out-of-band Interaction Domain;Spring Cloud Gateway Code Injection Attempt;Web Crawler,AS14061,United States,HIGH,DigitalOcean
+68.183.128.149,14,Spring Cloud Gateway OAST,Spring Cloud Gateway Code Injection Attempt;Contains Well-known Out-of-band Interaction Domain;Web Crawler,AS14061,United States,HIGH,DigitalOcean
+147.182.223.249,14,Spring Cloud Gateway OAST,Spring Cloud Gateway Code Injection Attempt;Contains Well-known Out-of-band Interaction Domain;Web Crawler,AS14061,United States,HIGH,DigitalOcean
+161.35.54.237,14,Spring Cloud Gateway OAST,Web Crawler;Contains Well-known Out-of-band Interaction Domain;Spring Cloud Gateway Code Injection Attempt,AS14061,United States,HIGH,DigitalOcean
+147.182.181.225,14,Spring Cloud Gateway OAST,Web Crawler;Spring Cloud Gateway Code Injection Attempt;Contains Well-known Out-of-band Interaction Domain,AS14061,United States,HIGH,DigitalOcean
+137.184.24.245,14,Spring Cloud Gateway OAST,Spring Cloud Gateway Code Injection Attempt;Web Crawler;Contains Well-known Out-of-band Interaction Domain,AS14061,United States,HIGH,DigitalOcean
+147.182.178.77,14,Spring Cloud Gateway OAST,Spring Cloud Gateway Code Injection Attempt;Web Crawler;Contains Well-known Out-of-band Interaction Domain,AS14061,United States,HIGH,DigitalOcean
+67.205.148.149,14,Spring Cloud Gateway OAST,Web Crawler;Contains Well-known Out-of-band Interaction Domain;Spring Cloud Gateway Code Injection Attempt,AS14061,United States,HIGH,DigitalOcean
+67.205.145.162,14,Spring Cloud Gateway OAST,Web Crawler;Contains Well-known Out-of-band Interaction Domain;Spring Cloud Gateway Code Injection Attempt,AS14061,United States,HIGH,DigitalOcean
+67.205.169.137,14,Spring Cloud Gateway OAST,Web Crawler;Spring Cloud Gateway Code Injection Attempt;Contains Well-known Out-of-band Interaction Domain,AS14061,United States,HIGH,DigitalOcean
+134.122.31.135,13,Spring Cloud Gateway OAST,Web Crawler;Contains Well-known Out-of-band Interaction Domain;Spring Cloud Gateway Code Injection Attempt,AS14061,United States,HIGH,DigitalOcean
+162.243.165.102,13,Spring Cloud Gateway OAST,Web Crawler;Spring Cloud Gateway Code Injection Attempt;Contains Well-known Out-of-band Interaction Domain,AS14061,United States,HIGH,DigitalOcean
+165.227.86.165,13,Spring Cloud Gateway OAST,Contains Well-known Out-of-band Interaction Domain;Web Crawler;Spring Cloud Gateway Code Injection Attempt,AS14061,United States,HIGH,DigitalOcean
+162.243.170.35,13,Spring Cloud Gateway OAST,Web Crawler;Contains Well-known Out-of-band Interaction Domain;Spring Cloud Gateway Code Injection Attempt,AS14061,United States,HIGH,DigitalOcean
+159.223.150.131,13,Spring Cloud Gateway OAST,Web Crawler;Contains Well-known Out-of-band Interaction Domain;Spring Cloud Gateway Code Injection Attempt,AS14061,United States,HIGH,DigitalOcean
+143.244.173.8,13,Spring Cloud Gateway OAST,Spring Cloud Gateway Code Injection Attempt;Contains Well-known Out-of-band Interaction Domain;Web Crawler,AS14061,United States,HIGH,DigitalOcean
+143.198.186.79,13,Spring Cloud Gateway OAST,Web Crawler;Contains Well-known Out-of-band Interaction Domain;Spring Cloud Gateway Code Injection Attempt,AS14061,United States,HIGH,DigitalOcean
+192.241.128.109,13,Spring Cloud Gateway OAST,Contains Well-known Out-of-band Interaction Domain;Spring Cloud Gateway Code Injection Attempt;Web Crawler,AS14061,United States,HIGH,DigitalOcean
+146.70.211.244,12,Spring Cloud Gateway OAST,Contains Well-known Out-of-band Interaction Domain,AS9009,Singapore,HIGH,M247 infrastructure - OAST callbacks
+103.60.12.224,10,Spring Cloud Gateway OAST,Contains Well-known Out-of-band Interaction Domain,AS135377,India,MEDIUM,OAST callback source
+37.60.230.90,8,Spring Cloud Gateway OAST,Spring Cloud Gateway Code Injection Attempt,AS51167,Germany,MEDIUM,Contabo infrastructure

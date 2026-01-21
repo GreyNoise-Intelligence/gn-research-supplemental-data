@@ -1,0 +1,70 @@
+ip_address,sessions,threat_type,tags,asn,country,confidence,notes
+5.29.8.175,492,Cisco SMA Scanner,Web Crawler;Feroxbuster;Cisco quarantine Scanner;ENV Crawler,AS12849,Israel,HIGH,Directory fuzzing targeting /quarantine paths
+34.207.235.82,6,Cisco SMA Scanner,Cisco quarantine Scanner;Web Crawler,AS14618,United States,HIGH,AWS infrastructure
+3.98.165.244,3,Cisco SMA Scanner,Cisco quarantine Scanner;Feroxbuster;Web Crawler,AS16509,Canada,HIGH,AWS infrastructure
+35.182.226.158,3,Cisco SMA Scanner,Feroxbuster;Cisco quarantine Scanner;Web Crawler,AS16509,Canada,HIGH,AWS infrastructure
+16.171.231.243,3,Cisco SMA Scanner,Feroxbuster;Cisco quarantine Scanner;Web Crawler,AS16509,Sweden,HIGH,AWS infrastructure
+15.152.76.209,3,Cisco SMA Scanner,Cisco quarantine Scanner;Web Crawler;Feroxbuster,AS16509,Japan,HIGH,AWS infrastructure
+13.215.207.188,2,Cisco SMA Scanner,Cisco quarantine Scanner;Feroxbuster;Web Crawler,AS16509,Singapore,HIGH,AWS infrastructure
+3.35.194.200,2,Cisco SMA Scanner,Cisco quarantine Scanner;Web Crawler;Generic Sensitive File Access Attempt;Git Config Crawler;Well-Known Scanner;Feroxbuster,AS16509,South Korea,HIGH,AWS infrastructure
+52.13.50.215,2,Cisco SMA Scanner,Web Crawler;Cisco quarantine Scanner;Feroxbuster,AS16509,United States,HIGH,AWS infrastructure
+3.95.177.255,2,Cisco SMA Scanner,Well-Known Scanner;Generic Sensitive File Access Attempt;Feroxbuster;Web Crawler;Cisco quarantine Scanner;MCP and SSE endpoint scanning,AS14618,United States,HIGH,AWS infrastructure
+3.26.145.135,2,Cisco SMA Scanner,Cisco quarantine Scanner;Feroxbuster;Web Crawler,AS16509,Australia,HIGH,AWS infrastructure
+52.221.218.139,2,Cisco SMA Scanner,Web Crawler;Cisco quarantine Scanner;Feroxbuster,AS16509,Singapore,HIGH,AWS infrastructure
+16.171.62.249,2,Cisco SMA Scanner,Web Crawler;Feroxbuster;CGI Script Scanner;Cisco quarantine Scanner,AS16509,Sweden,HIGH,AWS infrastructure
+51.20.5.213,2,Cisco SMA Scanner,Web Crawler;Cisco quarantine Scanner;Feroxbuster,AS16509,Sweden,HIGH,AWS infrastructure
+54.183.237.254,2,Cisco SMA Scanner,Cisco quarantine Scanner;Well-Known Scanner;Generic Sensitive File Access Attempt;Web Crawler;Feroxbuster,AS16509,United States,HIGH,AWS infrastructure
+13.208.34.157,2,Cisco SMA Scanner,Nmap;Cisco quarantine Scanner;Feroxbuster;Web Crawler;Well-Known Scanner,AS16509,Japan,HIGH,AWS infrastructure
+3.38.45.229,2,Cisco SMA Scanner,Cisco quarantine Scanner;Web Crawler;Feroxbuster,AS16509,South Korea,HIGH,AWS infrastructure
+3.36.52.123,2,Cisco SMA Scanner,Feroxbuster;CGI Script Scanner;Web Crawler;Cisco quarantine Scanner;Well-Known Scanner;security.txt Scanner,AS16509,South Korea,HIGH,AWS infrastructure
+3.112.175.107,2,Cisco SMA Scanner,Feroxbuster;Web Crawler;Cisco quarantine Scanner,AS16509,Japan,HIGH,AWS infrastructure
+13.124.1.18,2,Cisco SMA Scanner,Cisco quarantine Scanner;Feroxbuster;Web Crawler,AS16509,South Korea,HIGH,AWS infrastructure
+54.179.2.141,2,Cisco SMA Scanner,Feroxbuster;Web Crawler;Cisco quarantine Scanner,AS16509,Singapore,HIGH,AWS infrastructure
+3.22.222.42,2,Cisco SMA Scanner,Feroxbuster;Cisco quarantine Scanner;Web Crawler,AS16509,United States,HIGH,AWS infrastructure
+13.49.137.39,2,Cisco SMA Scanner,Web Crawler;Feroxbuster;Cisco quarantine Scanner,AS16509,Sweden,HIGH,AWS infrastructure
+44.192.92.58,2,Cisco SMA Scanner,Generic PHPInfo Access Attempt;Cisco quarantine Scanner;Web Crawler;Well-Known Scanner;Feroxbuster,AS14618,United States,HIGH,AWS infrastructure
+3.122.227.69,2,Cisco SMA Scanner,Cisco quarantine Scanner;Feroxbuster;Web Crawler,AS16509,Germany,HIGH,AWS infrastructure
+52.38.170.17,2,Cisco SMA Scanner,Feroxbuster;Cisco quarantine Scanner;Web Crawler,AS16509,United States,HIGH,AWS infrastructure
+50.18.35.109,2,Cisco SMA Scanner,Feroxbuster;Cisco quarantine Scanner;Web Crawler,AS16509,United States,HIGH,AWS infrastructure
+52.221.207.147,2,Cisco SMA Scanner,Cisco quarantine Scanner;Feroxbuster;Web Crawler,AS16509,Singapore,HIGH,AWS infrastructure
+13.49.159.207,2,Cisco SMA Scanner,Web Crawler;Cisco quarantine Scanner;Feroxbuster,AS16509,Sweden,HIGH,AWS infrastructure
+3.134.108.5,2,Cisco SMA Scanner,Feroxbuster;Web Crawler;Cisco quarantine Scanner,AS16509,United States,HIGH,AWS infrastructure
+54.161.89.34,2,Cisco SMA Scanner,Feroxbuster;Cisco quarantine Scanner;Web Crawler,AS14618,United States,HIGH,AWS infrastructure
+18.183.116.54,2,Cisco SMA Scanner,Cisco quarantine Scanner;Feroxbuster;Web Crawler,AS16509,Japan,HIGH,AWS infrastructure
+52.199.174.234,2,Cisco SMA Scanner,Web Crawler;Feroxbuster;Cisco quarantine Scanner,AS16509,Japan,HIGH,AWS infrastructure
+54.116.41.47,2,Cisco SMA Scanner,Cisco quarantine Scanner;Web Crawler;Feroxbuster,AS16509,South Korea,HIGH,AWS infrastructure
+63.179.118.115,2,Cisco SMA Scanner,Cisco quarantine Scanner;Web Crawler;Feroxbuster,AS16509,Germany,HIGH,AWS infrastructure
+13.50.252.228,2,Cisco SMA Scanner,Web Crawler;Feroxbuster;Cisco quarantine Scanner,AS16509,Sweden,HIGH,AWS infrastructure
+54.183.22.204,2,Cisco SMA Scanner,Cisco quarantine Scanner;Web Crawler;Feroxbuster,AS16509,United States,HIGH,AWS infrastructure
+54.67.94.89,2,Cisco SMA Scanner,Well-Known Scanner;Feroxbuster;CGI Script Scanner;Cisco quarantine Scanner;Web Crawler,AS16509,United States,HIGH,AWS infrastructure
+18.142.245.53,2,Cisco SMA Scanner,Web Crawler;Cisco quarantine Scanner;Well-Known Scanner;Feroxbuster;Sitemap Crawler,AS16509,Singapore,HIGH,AWS infrastructure
+13.231.134.44,2,Cisco SMA Scanner,Cisco quarantine Scanner;Feroxbuster;Web Crawler,AS16509,Japan,HIGH,AWS infrastructure
+13.53.184.189,2,Cisco SMA Scanner,Web Crawler;Cisco quarantine Scanner;Feroxbuster;Well-Known Scanner,AS16509,Sweden,HIGH,AWS infrastructure
+3.131.13.171,2,Cisco SMA Scanner,Cisco quarantine Scanner;Feroxbuster;Web Crawler,AS16509,United States,HIGH,AWS infrastructure
+13.211.234.177,2,Cisco SMA Scanner,Cisco quarantine Scanner;Feroxbuster;Web Crawler,AS16509,Australia,HIGH,AWS infrastructure
+54.93.182.238,2,Cisco SMA Scanner,Web Crawler;Feroxbuster;Cisco quarantine Scanner,AS16509,Germany,HIGH,AWS infrastructure
+15.134.85.208,2,Cisco SMA Scanner,Cisco quarantine Scanner;Web Crawler;Feroxbuster,AS16509,Australia,HIGH,AWS infrastructure
+16.171.65.107,2,Cisco SMA Scanner,Web Crawler;Cisco quarantine Scanner;Feroxbuster,AS16509,Sweden,HIGH,AWS infrastructure
+16.148.40.18,2,Cisco SMA Scanner,Cisco quarantine Scanner;Web Crawler;Feroxbuster,AS16509,United States,HIGH,AWS infrastructure
+54.180.1.141,2,Cisco SMA Scanner,Feroxbuster;Cisco quarantine Scanner;Web Crawler,AS16509,South Korea,HIGH,AWS infrastructure
+18.144.38.168,2,Cisco SMA Scanner,Web Crawler;Feroxbuster;Cisco quarantine Scanner,AS16509,United States,HIGH,AWS infrastructure
+35.158.110.167,2,Cisco SMA Scanner,Cisco quarantine Scanner;Web Crawler;Feroxbuster,AS16509,Germany,HIGH,AWS infrastructure
+3.99.21.105,2,Cisco SMA Scanner,Feroxbuster;Web Crawler;Cisco quarantine Scanner,AS16509,Canada,HIGH,AWS infrastructure
+3.86.51.31,2,Cisco SMA Scanner,Cisco quarantine Scanner;Feroxbuster;Web Crawler,AS14618,United States,HIGH,AWS infrastructure
+13.51.36.193,2,Cisco SMA Scanner,Feroxbuster;Web Crawler;Cisco quarantine Scanner;Well-Known Scanner;Generic Sensitive File Access Attempt,AS16509,Sweden,HIGH,AWS infrastructure
+34.201.101.159,2,Cisco SMA Scanner,Cisco quarantine Scanner;Web Crawler;Feroxbuster,AS14618,United States,HIGH,AWS infrastructure
+18.136.212.166,2,Cisco SMA Scanner,Feroxbuster;Cisco quarantine Scanner;Web Crawler,AS16509,Singapore,HIGH,AWS infrastructure
+43.203.178.194,2,Cisco SMA Scanner,Feroxbuster;Cisco quarantine Scanner;Web Crawler,AS16509,South Korea,HIGH,AWS infrastructure
+13.251.35.235,2,Cisco SMA Scanner,WebDAV Scanner;Web Crawler;Well-Known Scanner;Feroxbuster;Cisco quarantine Scanner;Generic Sensitive File Access Attempt,AS16509,Singapore,HIGH,AWS infrastructure
+16.16.104.94,2,Cisco SMA Scanner,Cisco quarantine Scanner;Web Crawler;Feroxbuster,AS16509,Sweden,HIGH,AWS infrastructure
+44.247.74.54,2,Cisco SMA Scanner,Feroxbuster;Cisco quarantine Scanner;Web Crawler,AS16509,United States,HIGH,AWS infrastructure
+44.201.91.210,2,Cisco SMA Scanner,Web Crawler;Cisco quarantine Scanner;Feroxbuster,AS14618,United States,HIGH,AWS infrastructure
+3.69.150.55,2,Cisco SMA Scanner,Cisco quarantine Scanner;Feroxbuster;Well-Known Scanner;Web Crawler,AS16509,Germany,HIGH,AWS infrastructure
+3.101.14.90,2,Cisco SMA Scanner,Cisco quarantine Scanner;Web Crawler;Feroxbuster;Generic Sensitive File Access Attempt;Git Config Crawler;Well-Known Scanner,AS16509,United States,HIGH,AWS infrastructure
+54.204.194.167,2,Cisco SMA Scanner,Cisco quarantine Scanner;Web Crawler;Feroxbuster,AS14618,United States,HIGH,AWS infrastructure
+18.141.182.39,1,Cisco SMA Scanner,Web Crawler;Feroxbuster;Cisco quarantine Scanner,AS16509,Singapore,HIGH,AWS infrastructure
+185.177.72.22,1,Cisco SMA Scanner,Cisco quarantine Scanner;Generic /proc Enumeration Attempt;ENV Crawler;Generic Path Traversal Attempt;Double URL Encoding;Well-Known Scanner;Web Crawler,AS211590,France,MEDIUM,Bucklog SARL infrastructure
+18.223.20.71,1,Cisco SMA Scanner,Cisco quarantine Scanner;Feroxbuster;Well-Known Scanner;Web Crawler,AS16509,United States,HIGH,AWS infrastructure
+3.34.44.32,1,Cisco SMA Scanner,Web Crawler;Feroxbuster;Cisco quarantine Scanner,AS16509,South Korea,HIGH,AWS infrastructure
+44.251.28.240,1,Cisco SMA Scanner,Web Crawler;Cisco quarantine Scanner;Feroxbuster,AS16509,United States,HIGH,AWS infrastructure
+13.56.236.15,1,Cisco SMA Scanner,Web Crawler;Cisco quarantine Scanner;Feroxbuster,AS16509,United States,HIGH,AWS infrastructure

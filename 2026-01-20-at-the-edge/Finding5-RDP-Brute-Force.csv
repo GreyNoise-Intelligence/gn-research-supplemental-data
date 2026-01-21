@@ -1,0 +1,31 @@
+ip_address,sessions,threat_type,tags,asn,country,confidence,notes
+147.45.112.157,6585953,RDP Brute Force,RDP Crawler;RDP Bruteforce Attempt,AS209132,Moldova,HIGH,Top RDP attacker - 6.6M sessions alone
+45.227.254.6,1630899,RDP Brute Force,RDP Crawler;RDP Bruteforce Attempt,AS267784,Lithuania,HIGH,MCLAUT infrastructure
+45.227.253.170,812447,RDP Brute Force,RDP Crawler;RDP Bruteforce Attempt,AS209132,Moldova,HIGH,MCLAUT Moldova infrastructure
+141.98.11.134,810293,RDP Brute Force,RDP Crawler;RDP Bruteforce Attempt,AS209605,Lithuania,HIGH,MCLAUT Moldova infrastructure
+91.224.92.114,646076,RDP Brute Force,RDP Crawler;RDP Bruteforce Attempt,AS209132,Moldova,HIGH,MCLAUT Moldova infrastructure
+141.98.11.158,572804,RDP Brute Force,RDP Crawler;RDP Bruteforce Attempt,AS209132,Moldova,HIGH,MCLAUT Moldova infrastructure
+80.94.95.221,138,RDP Brute Force,RDP Crawler;RDP Bruteforce Attempt,AS204428,Romania,HIGH,
+154.210.211.199,13,RDP Brute Force,RDP Crawler;RDP Bruteforce Attempt;RDP Protocol,AS18229,India,HIGH,
+194.165.16.145,11,RDP Brute Force,RDP Crawler;RDP Bruteforce Attempt,AS48721,Lithuania,HIGH,
+79.124.59.78,6,RDP Brute Force,RDP Bruteforce Attempt;RDP Crawler,AS50360,Bulgaria,HIGH,
+194.164.107.6,5,RDP Brute Force,RDP Bruteforce Attempt;RDP Crawler,AS50219,Singapore,HIGH,
+71.6.134.232,3,RDP Brute Force,RDP Crawler;RDP Bruteforce Attempt,AS10439,United States,HIGH,
+94.154.35.122,3,RDP Brute Force,RDP Crawler;RDP Bruteforce Attempt,AS214943,Netherlands,HIGH,
+194.164.107.5,2,RDP Brute Force,RDP Protocol;RDP Crawler;RDP Bruteforce Attempt,AS50219,Singapore,HIGH,
+128.1.126.101,2,RDP Brute Force,RDP Crawler;RDP Protocol;RDP Bruteforce Attempt,AS21859,Vietnam,HIGH,
+194.165.16.161,2,RDP Brute Force,RDP Crawler;RDP Bruteforce Attempt,AS48721,Lithuania,HIGH,
+202.165.14.28,1,RDP Brute Force,RDP Protocol;RDP Crawler;RDP Bruteforce Attempt,AS18206,Malaysia,HIGH,
+194.165.16.162,1,RDP Brute Force,RDP Bruteforce Attempt;RDP Crawler,AS48721,Lithuania,HIGH,
+45.227.254.155,1,RDP Brute Force,RDP Bruteforce Attempt;RDP Crawler,AS267784,Lithuania,HIGH,
+45.249.245.54,1,RDP Brute Force,RDP Crawler;RDP Bruteforce Attempt,AS135377,Hong Kong,HIGH,
+165.154.182.219,1,RDP Brute Force,RDP Crawler;RDP Bruteforce Attempt,AS135377,United States,HIGH,
+88.214.25.123,1,RDP Brute Force,RDP Crawler;RDP Bruteforce Attempt,AS35042,Germany,HIGH,
+88.214.25.121,1,RDP Brute Force,RDP Bruteforce Attempt;RDP Crawler,AS35042,Germany,HIGH,
+45.227.254.132,1,RDP Brute Force,RDP Bruteforce Attempt;RDP Crawler,AS267784,Lithuania,HIGH,
+108.130.227.159,1,RDP Brute Force,RDP Crawler;RDP Protocol;RDP Bruteforce Attempt,AS16509,Ireland,HIGH,AWS infrastructure
+194.165.16.164,1,RDP Brute Force,RDP Crawler;RDP Bruteforce Attempt,AS48721,Lithuania,HIGH,
+71.6.134.230,1,RDP Brute Force,RDP Bruteforce Attempt;RDP Crawler,AS10439,United States,HIGH,
+34.139.197.107,1,RDP Brute Force,RDP Bruteforce Attempt;RDP Crawler,AS396982,United States,HIGH,GCP infrastructure
+158.94.209.193,1,RDP Brute Force,RDP Bruteforce Attempt;RDP Crawler,AS214943,Netherlands,HIGH,
+194.165.16.163,1,RDP Brute Force,RDP Crawler;RDP Bruteforce Attempt,AS48721,Lithuania,HIGH,

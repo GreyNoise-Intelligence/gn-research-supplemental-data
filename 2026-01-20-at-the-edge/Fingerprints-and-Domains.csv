@@ -1,0 +1,10 @@
+fingerprint,type,sessions,description,confidence
+65495_2-4-8-1-3_65495_7,JA4T,4767469,"Coordinated campaign fingerprint - MSS 65495 anomaly indicates containerized/VPN-tunneled scanning",HIGH
+200_2-1-3-1-1-4_1460_0,JA4T,N/A,RDP mass scanner fingerprint,HIGH
+po11nn060000_4ea4093e6290,JA4H,N/A,OAST scanner tool fingerprint,HIGH
+
+domain_pattern,type,description,confidence
+*.oast.live,OAST Callback,Out-of-band vulnerability validation infrastructure,HIGH
+*.oast.pro,OAST Callback,Out-of-band vulnerability validation infrastructure,HIGH
+*.interact.sh,OAST Callback,Out-of-band vulnerability validation infrastructure,HIGH
+*.burpcollaborator.net,OAST Callback,Burp Suite callback infrastructure,MEDIUM

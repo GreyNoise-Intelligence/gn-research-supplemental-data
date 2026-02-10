@@ -1,0 +1,9 @@
+cve,cvss,product,type,context,source
+CVE-2026-1281,9.8,Ivanti EPMM,Unauthenticated RCE via Bash arithmetic expansion,Primary exploitation target - 417 sessions observed,GreyNoise
+CVE-2026-1340,9.8,Ivanti EPMM,Code injection in related component,Related vulnerability - same advisory,GreyNoise
+CVE-2026-21962,,Oracle WebLogic,Remote code execution,Exploited by primary IP 193.24.123.42 - 2902 sessions,GreyNoise
+CVE-2026-24061,,GNU Inetutils Telnetd,Remote code execution,Exploited by primary IP 193.24.123.42 - 497 sessions,GreyNoise
+CVE-2025-24799,,GLPI IT Asset Management,Remote code execution,Exploited by primary IP 193.24.123.42 - 200 sessions,GreyNoise
+CVE-2023-38408,9.8,OpenSSH 8.9p1,Remote code execution (KEV),Present on C2 server 198.98.54.209,Censys
+CVE-2024-6387,8.1,OpenSSH 8.9p1,Race condition RCE - regreSSHion (KEV),Present on C2 server 198.98.54.209,Censys
+CVE-2023-48795,5.9,OpenSSH 8.9p1,Terrapin prefix truncation (KEV),Present on C2 server 198.98.54.209,Censys

@@ -1,0 +1,34 @@
+indicator,type,kill_chain_phase,confidence,context,source
+198.98.54.209:34473,ip:port,command_and_control,HIGH,Cobalt Strike C2 beacon listener,Censys
+198.98.54.209:22,ip:port,command_and_control,HIGH,OpenSSH 8.9p1 Ubuntu - 3 KEV-listed CVEs,Censys
+198.98.54.209:80,ip:port,command_and_control,HIGH,nginx default - C2 infrastructure,Censys
+198.98.54.209:38080,ip:port,command_and_control,HIGH,HTTP with Basic auth - C2 infrastructure,Censys
+2ad2ad16d2ad2ad00042d42d00042ddb04deffa1705e2edc44cae1ed24a4da,jarm,command_and_control,HIGH,Cobalt Strike TLS fingerprint (generic CS detection),Censys
+15af977ce25de452b96affa2addb1036,ja3s,command_and_control,HIGH,Cobalt Strike server-side TLS fingerprint,Censys
+4c79aa347b77ed91ebedcb2fb96e3642fcd6850f2d861abef68b90263d792094,tls_cert_sha256,command_and_control,HIGH,C2 TLS cert - CN=Pwn3rs Striked - self-signed - expired 2024-11-05,Censys
+Pwn3rs Striked,tls_cert_cn,command_and_control,HIGH,Cobalt Strike C2 certificate common name,Censys
+Pwn3rs,tls_cert_org,command_and_control,HIGH,Cobalt Strike C2 certificate organization field,Censys
+AdvancedReversing,tls_cert_ou,command_and_control,HIGH,Cobalt Strike C2 certificate organizational unit,Censys
+There,tls_cert_country,command_and_control,HIGH,Cobalt Strike C2 certificate country field,Censys
+Over,tls_cert_state,command_and_control,HIGH,Cobalt Strike C2 certificate state field,Censys
+Around,tls_cert_locality,command_and_control,HIGH,Cobalt Strike C2 certificate locality field,Censys
+4145358b36c4974612bae04557e0773b1c918bcceca2583e0acec42e1d5c5ec5,ssh_key_sha256,command_and_control,HIGH,SSH host key on C2 server 198.98.54.209,Censys
+41ff3ecd1458b0bf86e1b4891636213e,hassh,command_and_control,HIGH,SSH client fingerprint on C2 server 198.98.54.209,Censys
+ae6c36268369f25c23d799aaf5ed7d03e79edf11ad9e6b1d066be830c32c3740,file_hash_sha256,delivery,MEDIUM,ELF botnet dropper hosted on 198.98.54.209,VirusTotal
+http://45.129.230.38:8899/1.exe,url,delivery,MEDIUM,Windows EXE distribution endpoint,VirusTotal
+http://45.129.230.38:8899/saa.exe,url,delivery,MEDIUM,Windows EXE distribution endpoint,VirusTotal
+http://45.129.230.38/recover.exe,url,delivery,MEDIUM,Windows EXE distribution endpoint,VirusTotal
+http://198.98.54.209/a.sh,url,delivery,MEDIUM,Linux botnet staging script,VirusTotal
+http://198.98.54.209/slt,url,delivery,MEDIUM,Linux botnet staging binary,VirusTotal
+/mifs/403.jsp,file_path,persistence,HIGH,Dormant sleeper web shell on compromised EPMM instances,Defused Cyber
+www.vvork.com,tls_cert_cn,reconnaissance,MEDIUM,Hestia Control Panel self-signed cert on primary IP 193.24.123.42,Censys
+AS200593,asn,reconnaissance,HIGH,PROSPERO OOO - bulletproof hosting - 83% of exploitation volume,GreyNoise
+AS213438,asn,reconnaissance,HIGH,ColocaTel - secondary exploitation source - malware distribution,GreyNoise
+AS53667,asn,command_and_control,HIGH,FranTech/PONYNET - Cobalt Strike C2 hosting - 198.98.48.0/20,Censys
+interact.sh,domain,exploitation,HIGH,OAST callback domain - 85% of payloads use OAST DNS callbacks,GreyNoise
+oastify.com,domain,exploitation,HIGH,OAST callback domain - Burp Collaborator,GreyNoise
+oast.fun,domain,exploitation,HIGH,OAST callback domain,GreyNoise
+oast.live,domain,exploitation,HIGH,OAST callback domain,GreyNoise
+oast.site,domain,exploitation,HIGH,OAST callback domain,GreyNoise
+oast.online,domain,exploitation,HIGH,OAST callback domain,GreyNoise
+oast.me,domain,exploitation,HIGH,OAST callback domain,GreyNoise

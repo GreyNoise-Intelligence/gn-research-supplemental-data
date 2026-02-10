@@ -1,0 +1,6 @@
+ip,sessions,pct_total,org,asn,country,confidence,context
+193.24.123.42,346,83%,PROSPERO OOO,AS200593,Russia,HIGH,Primary exploitation source - bulletproof hosting - multi-CVE platform (WebLogic/Telnetd/GLPI)
+45.129.230.38,26,6%,ColocaTel Inc.,AS213438,Russia,HIGH,Secondary source - malware distribution URLs on ports 8899 and 80
+198.98.54.209,26,6%,FranTech Solutions,AS53667,United States,HIGH,Active Cobalt Strike C2 on port 34473 - 21 threat actor associations
+156.146.45.26,8,2%,Datacamp Limited,AS212238,Hong Kong,HIGH,CDN77 exit node with observed exploitation sessions
+198.98.56.220,8,2%,FranTech Solutions,AS53667,United States,HIGH,Same /20 subnet as C2 server (198.98.48.0/20)

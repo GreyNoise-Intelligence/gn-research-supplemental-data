@@ -1,0 +1,13 @@
+type,indicator,sessions,context
+c2_domain,c2.dstatbot[.]win,8934,Botnet C2 domain; persistent across Briefs #7 and #8
+c2_callback,193.149.189[.]126:7227,24447,C2 callback on port 7227
+c2_callback,185.65.245[.]140:7227,24364,C2 callback on port 7227
+c2_callback,185.65.245[.]10:7227,24335,C2 callback on port 7227
+c2_callback,45.61.137[.]126:7227,24066,C2 callback on port 7227
+domain,sni-api.furry[.]ist,52787,Suspicious SNI domain in TLS scanning
+cve,CVE-2026-21643,N/A,FortiClientEMS unauth SQL injection; CVSS 9.8; PATCH NOW
+cve,CVE-2025-49113,N/A,Roundcube PHP Object Deser RCE; CVSS 9.9; CISA KEV; Metasploit available; PATCH NOW
+cve,CVE-2022-40684,N/A,FortiOS auth bypass; exploited in AI-assisted ARXON campaign; 600+ devices compromised
+cve,CVE-2022-1040,74980,Sophos Firewall auth bypass RCE; CVSS 9.8; NEW GN tag; 8 unique IPs
+fingerprint,JA4T 65495_2-4-8-1-3_65495_7,8913440,Anomalous MSS 65495; Week 7; custom scanning tool or tunneled traffic
+fingerprint,JA4T 200_2-1-3-1-1-4_1460_0,5200000,Custom SYN scanner; unusual TCP options; mega-scanner infrastructure

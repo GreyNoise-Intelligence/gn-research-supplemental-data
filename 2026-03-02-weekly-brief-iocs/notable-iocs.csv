@@ -1,0 +1,17 @@
+type,indicator,sessions,context
+cve,CVE-2025-55182,559815,React Server Components RCE via unsafe deserialization; CVSS 10.0; CISA KEV; 2007 malicious IPs
+cve,CVE-2026-21858,154178,n8n arbitrary file access; CVSS 10.0; 353 malicious IPs; +107% WoW
+cve,CVE-2022-1040,228327,Sophos Firewall authentication bypass RCE; CVSS 9.8; CISA KEV; +435% WoW surge
+cve,CVE-2020-2034,57171,Palo Alto PAN-OS GlobalProtect command injection; CVSS 8.1; 2736 malicious IPs
+cve,CVE-2021-36260,108789,Hikvision IP Camera RCE; 77 malicious IPs; 4 botnets
+cve,CVE-2024-1709,N/A,ConnectWise ScreenConnect auth bypass; targeted by VisionHeight cluster
+cve,CVE-2024-4323,N/A,Fluent Bit RCE; targeted by 46.19.137.194 multi-exploit toolkit
+cve,CVE-2025-30208,25359,Vite arbitrary file disclosure; observed in GreyNoise telemetry
+cve,CVE-2026-20127,N/A,Cisco Catalyst SD-WAN auth bypass; CVSS 10.0; CISA ED 26-03; expect exploitation imminently
+domain,scan.visionheight[.]com,5222040,Coordinated AWS-hosted scanning operation; 5 IPs; rDNS confirmed; active since Jan 4 2026
+cidr,94.26.88.0/24,9065743,MEVSPACE RDP mega-scanner range; block at perimeter
+fingerprint,JA4T 65535_2-4-8-1-3_1400_7,9065743,MEVSPACE shared JA4T fingerprint; links both RDP mega-scanner IPs
+fingerprint,JA3 cba7f34191ef2379c1325641f6c6c4f4,5222040,Shared JA3 fingerprint across all 5 VisionHeight cluster IPs
+user_agent,Mozilla/5.0 Chrome/140,1680000,Fabricated user agent; Chrome/140 does not exist; VPN campaign marker
+user_agent,Mozilla/5.0 Chrome/144,420000,Fabricated user agent; Chrome/144 does not exist
+user_agent,Mozilla/5.0 Firefox/146,210000,Fabricated user agent; Firefox/146 does not exist

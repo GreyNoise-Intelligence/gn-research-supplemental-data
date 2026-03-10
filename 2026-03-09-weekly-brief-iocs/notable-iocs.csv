@@ -1,0 +1,33 @@
+type,indicator,sessions,priority,context
+tag,SMBv1 Scan,17906637,CRITICAL,Server Message Block v1 scanning — +197% WoW — worm propagation
+tag,DCERPC Scan,14529846,CRITICAL,"DCE/RPC scanning — +199% WoW — 39/50 top IPs shared with SMBv1"
+tag,Ollama API Scanner,51801,CRITICAL,Ollama model server scanning on port 11434 — +37.9% WoW
+cve,CVE-2025-15063,0,CRITICAL,Ollama MCP Server 0-day RCE CVSS 9.8 — UNPATCHED
+tag,Fortinet SSL VPN Bruteforcer,655454,CRITICAL,Fortinet VPN brute force — +79.2% WoW — dominant siege vector
+tag,Sophos Firewall CVE-2022-1040 RCE Attempt,357762,CRITICAL,"Sophos RCE exploitation — +71.2% WoW — 3-week escalation"
+tag,MikroTik Chimay Red Exploit,344668,CRITICAL,"RouterOS exploitation — +1103% WoW — botnet expanded 19 to 6046 IPs"
+cidr,93.152.221.0/24,212983,CRITICAL,Sophos CVE-2022-1040 dominant CIDR — concentrated exploitation
+asn,AS14061+AS63949,828696,CRITICAL,"DigitalOcean+Linode duopoly — 89-99.8% of ICS scanning"
+tag,Jupyter Notebook Scanner,286229,HIGH,Jupyter notebook scanning on port 8888 — +25.5% WoW
+tag,RFB Scanner,13308498,HIGH,Remote Framebuffer/VNC scanning — +250% WoW — separate cloud campaign
+tag,Telnet Scanner,7080303,HIGH,Telnet scanning — +207% WoW
+user-agent,ollama-audit/1.0,295,HIGH,Custom Ollama reconnaissance user agent — purpose-built scanning tool
+path,/v1/chat/completions,1653,HIGH,OpenAI-compatible API endpoint probing — 97.8% from single IP
+path,/api/tags,3148,HIGH,Ollama model enumeration — +374% WoW
+path,/api/version,306,HIGH,Ollama version fingerprinting — +525% WoW
+path,/api/ps,246,HIGH,Ollama running model discovery — NEW this week
+path,/.cline/memory.json,65,HIGH,Cline AI coding tool credential harvesting — novel observation
+path,/.aider.chat.history.md,64,HIGH,Aider AI coding tool credential harvesting — novel observation
+path,/.cursor/rules,50,HIGH,Cursor AI coding tool credential harvesting — novel observation
+asn,AS14061 (DigitalOcean),20264,HIGH,39.1% of Ollama scanning — dominant AI targeting ASN
+tag,Sophos XG User Portal Scan,225908,HIGH,Sophos portal scanning — +279.4% WoW
+tag,Cisco SSL VPN Bruteforcer,217803,HIGH,"Cisco VPN brute force — Week 7 sustained"
+tag,Cisco Smart Install Scan,152631,HIGH,Industrial network switch scanning — +438% WoW
+tag,iSCSI Scanner,147717,HIGH,Storage protocol scanning — +480% WoW
+tag,Veeder-Root ATG Scanner,145075,HIGH,Fuel tank monitoring scanning — +443% WoW
+tag,PAN-OS CVE-2020-2034 OS Command Injection Attempt,44325,HIGH,Palo Alto exploitation
+tag,Tridium Niagara Scanner,31703,HIGH,Building automation scanning — +75% WoW
+tag,SonicWall SSL VPN Login Attempt,26612,HIGH,SonicWall VPN brute force
+tag,RDP Crawler,17583466,HIGH,RDP enumeration — +31% WoW — independent of MEVSPACE
+tag,RDP Protocol,1083750,MONITOR,"RDP scanning — -89.4% WoW — MEVSPACE departure"
+asn,AS201814 (MEVSPACE),20398,MONITOR,"MEVSPACE RDP collapse — from 9.3M to 20K (-99.8%)"

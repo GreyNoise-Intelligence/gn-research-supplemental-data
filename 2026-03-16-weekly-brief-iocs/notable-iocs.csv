@@ -1,0 +1,25 @@
+type,indicator,sessions,priority,context
+cve,CVE-2022-1040,614000,CRITICAL,Sophos Firewall RCE — 4th week of escalation +90.5% WoW
+cve,CVE-2025-55182,1620000,CRITICAL,React Server Components RCE — resurgent +56.2% after decline
+cve,CVE-2026-20127,0,CRITICAL,Cisco Catalyst SD-WAN Manager auth bypass CVSS 10.0 — CISA KEV (no GN tag yet)
+cve,CVE-2026-20131,0,CRITICAL,Cisco Firepower Management Center RCE CVSS 10.0 — CISA KEV (no GN tag yet)
+tag,Sophos Firewall CVE-2022-1040 Remote Code Execution Attempt,614000,CRITICAL,4th consecutive week of escalation
+tag,Sophos XG Firewall User Portal Scanner,412433,CRITICAL,+102% WoW — Sophos management interface reconnaissance
+tag,React CVE-2025-55182 RCE Attempt,1620000,CRITICAL,Resurgent after multi-week decline
+tag,RDP Bruteforce Attempt,0,HIGH,Post-MEVSPACE — multiple rotating operators
+tag,RDP Protocol,0,HIGH,+157% WoW despite dominant operator collapse
+tag,SonicWall SSL VPN Login Attempt,0,HIGH,+111% WoW — VPN siege Week 8
+tag,SMBv1 Crawler,0,MONITOR,+37% WoW — stable at elevated levels
+tag,DCERPC Protocol,0,MONITOR,+35% WoW — stable at elevated levels
+asn,AS135377,47200000,CRITICAL,UCLOUD HK — surged +578% to #1 scanning ASN (15.6% of all traffic)
+asn,AS14061,27400000,MONITOR,DigitalOcean — declined -46% WoW
+fingerprint-ja4t,64952_2-4-8-1-3_1412_7,29300000,CRITICAL,NEW tunneled scanning fingerprint — MSS 1412 indicates VPN tunnel
+fingerprint-ja4t,65495_2-4-8-1-3_65495_7,6300000,MONITOR,Week 11 persistent — +22% WoW
+domain,proxy.flarevpn.digital,188000,HIGH,New proxy infrastructure domain
+domain,load.vmheaven.io,137000,HIGH,VMHeaven/RondoDox-linked proxy domain
+domain,rapidis.gay,100000,HIGH,New proxy infrastructure domain
+domain,xpert.lol,90000,HIGH,New proxy infrastructure domain
+domain,c3.dstatbot.win,0,MONITOR,DDoS C2 domain — persistent
+domain,dstat.love,0,MONITOR,DDoS C2 domain — persistent
+user-agent,Dell SonicWALL NetExtender,27000,HIGH,NEW — first observation of Dell SonicWALL scanning tool
+user-agent,curl/8.7.1,0,MONITOR,Doubled WoW — scanning toolchain indicator

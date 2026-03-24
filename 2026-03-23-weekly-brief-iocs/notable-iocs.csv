@@ -1,0 +1,14 @@
+type,indicator,sessions,context
+cve,CVE-2025-55182,1333635,CVSS 10.0; not in CISA KEV; -17.7% WoW; React Server Components pre-auth RCE
+cve,CVE-2022-1040,638654,CVSS 9.8; CISA KEV listed; +4% WoW; Sophos Firewall RCE 5th consecutive week
+cve,CVE-2020-2034,132197,Palo Alto PAN-OS GlobalProtect command injection
+cve,CVE-2026-21858,118086,CVSS 10.0; n8n workflow automation unauthenticated file access
+cve,CVE-2024-1709,N/A,CVSS 10.0; ConnectWise ScreenConnect auth bypass; active scanning observed
+cve,CVE-2025-0108,N/A,Palo Alto PAN-OS authentication bypass; trending on GreyNoise
+cve,CVE-2023-1389,N/A,TP-Link Archer AX21; 13 botnet associations; active IoT worm target
+cve,CVE-2021-36260,N/A,Hikvision camera command injection; active IoT worm target
+cve,CVE-2024-3721,N/A,TBK DVR; active IoT worm target
+cidr,130.12.180.0/24,N/A,Omegatech fingerprint randomization cluster; block at perimeter
+cidr,45.205.1.0/24,N/A,VPSVAULT.HOST IoT worm infrastructure; block at perimeter
+cidr,80.94.95.0/24,N/A,SS-Net RDP brute-force cluster; block at perimeter
+fingerprint,JA3 9460af62ae0af667130bf0d36514f084,N/A,VPSVAULT.HOST IoT worm shared fingerprint

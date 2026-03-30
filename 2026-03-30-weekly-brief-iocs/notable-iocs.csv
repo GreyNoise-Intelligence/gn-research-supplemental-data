@@ -1,0 +1,13 @@
+type,indicator,sessions,context
+cve,CVE-2025-55182,1338336,"CVSS 10.0; CISA KEV; React Server Components RCE; -17.4% WoW"
+cve,CVE-2022-1040,356603,"CVSS 9.8; Sophos Firewall RCE; -42% WoW from prior peak"
+cve,CVE-2024-1709,,"CVSS 10.0; CISA KEV; ConnectWise ScreenConnect auth bypass; actively scanned by VisionHeight fleet"
+cve,CVE-2025-29927,,"CVSS 9.1; Next.js middleware bypass; chained with CVE-2025-55182"
+cve,CVE-2026-24061,,"CVSS 9.8; CISA KEV; GNU Inetutils telnetd auth bypass; exploited by VPSVAULT platform"
+cve,CVE-2020-2034,,"CVSS 8.1; Palo Alto PAN-OS command injection; checked by VisionHeight fleet"
+cve,CVE-2021-36260,51622,"CVSS 9.8; CISA KEV; Hikvision IP Camera RCE; botnet recruitment"
+cve,CVE-2023-1389,,"CVSS 8.8; CISA KEV; TP-Link Archer AX21; exploited by 13 botnets"
+domain,scan.visionheight[.]com,5892055,"VisionHeight fleet rDNS; 6 AWS IPs; coordinated perimeter recon"
+cidr,45.205.1.0/24,3347443,"VPSVAULT.HOST LTD (AS215925); IoT exploitation platform; block at perimeter"
+fingerprint,JA4T 64952_2-4-8-1-3_1412_7,,"UCLOUD-associated fingerprint from prior period; episodic surge indicator"
+user_agent,Googlebot/2.1,,"Fabricated; used by 193.32.162.28 for WAF evasion in React/Next.js campaign"

@@ -1,0 +1,12 @@
+type,indicator,sessions,context
+cve,CVE-2025-55182,792329,"CVSS 10.0, CISA KEV, React Server Components pre-auth RCE, -26.9% WoW"
+cve,CVE-2024-1709,N/A,"CVSS 10.0, CISA KEV, ConnectWise ScreenConnect auth bypass, targeted by VisionHeight cluster"
+cve,CVE-2025-69985,39357,"CVSS 9.8, FUXA industrial HMI auth bypass RCE, new tag, 5 days since publication"
+cve,CVE-2021-36260,263533,"CVSS 9.8, CISA KEV, Hikvision camera command injection, 113 malicious IPs"
+cve,CVE-2020-2034,55821,"CVSS 8.1, PAN-OS command injection, targeted by VisionHeight cluster"
+cve,CVE-2023-33831,39357,"CVSS N/A, FUXA command execution, chained with CVE-2025-69985"
+cve,CVE-2021-41773,105183,"CVSS 7.5, CISA KEV, Apache HTTP Server path traversal, 2648 malicious IPs"
+domain,scan[.]visionheight[.]com,10898939,"AWS AS16509, 7 IPs, JA3 cba7f34191ef2379c1325641f6c6c4f4, targets 8 product families"
+cidr,45.205.1.0/24,3860047,"VPSVAULT.HOST LTD AS215925 Brazil, RouterOS brute-force cluster, block at perimeter"
+cidr,80.94.95.0/24,2738702,"SS-Net AS204428 Romania, RDP brute-force cluster, block at perimeter"
+fingerprint,JA3 cba7f34191ef2379c1325641f6c6c4f4,10898939,"VisionHeight cluster shared TLS fingerprint, all 7 nodes"

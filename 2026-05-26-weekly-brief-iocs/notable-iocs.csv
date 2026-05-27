@@ -1,0 +1,18 @@
+type,indicator,sessions,context
+cve,CVE-1999-0526,1104771,X Server unauthenticated access (CVSS 0.0; legacy config issue, not patch-actionable). Used only as the Masscan cluster's signature tag (DigitalOcean-Singapore peers); persistent vs prior briefs.
+cve,CVE-2017-9841,503393,PHPUnit eval-stdin RCE; CVSS 9.8; CISA KEV. Rose into top-ranked web-app exploitation tags this period.
+cve,CVE-2025-55182,456599,"React Server Components unsafe deserialization RCE; critical severity; grouped with actively-targeted KEV CVEs this period. Steady-state, no fresh spike."
+cve,CVE-2021-41773,150197,Apache HTTP Server path traversal RCE; CVSS 7.5; CISA KEV. Steady-state targeting vs prior briefs.
+cve,CVE-2020-2034,72075,PAN-OS GlobalProtect command injection; CVSS 8.1. Observed on the VisionHeight AWS reconnaissance cluster; steady-state.
+cve,CVE-2021-32030,68435,ASUS Router broken-authentication bypass; critical severity. SOHO-router targeting that expanded into top tags this period.
+cve,CVE-2012-1823,53187,PHP CGI argument-injection RCE; CVSS 7.5; CISA KEV. Steady-state long-tail web exploitation.
+cve,CVE-2024-4577,52354,PHP CGI argument-injection RCE (Windows); CVSS 9.8; CISA KEV. Steady-state targeting vs prior briefs.
+cve,CVE-2018-7445,N/A,"MikroTik RouterOS SMB pre-auth buffer-overflow RCE; CVSS 9.8; CISA KEV. Carried by 45.142.193.212 alongside RouterOS Bruteforcer (1,938,001 tag sessions); active pressure this week."
+cve,CVE-2026-32746,N/A,"GNU inetutils telnetd out-of-bounds write; CVSS 9.8. Watch item tracked since the 2026-04-20 brief — minimal volume, not materially grown; low-level probing continues this period."
+domain,scan.visionheight[.]com,2480807,"Shared reverse DNS of the VisionHeight AWS reconnaissance cluster (16.58.56.214, 18.218.118.203); tracked since the 2026-04-13 brief, declined to two nodes this week."
+cidr,45.198.224.0/24,N/A,VPSVAULT.HOST (AS215925) range hosting MikroTik RouterOS bruteforcer 45.198.224.18; block at perimeter.
+cidr,45.205.1.0/24,N/A,VPSVAULT.HOST (AS215925) range hosting MikroTik RouterOS bruteforcer 45.205.1.5; block at perimeter.
+cidr,160.119.76.0/24,N/A,Alsycon (AS49870) range hosting the enterprise-VPN reconnaissance pair 160.119.76.13 and 160.119.76.54; block at perimeter.
+fingerprint,JA4T 64240_2-4-8-1-3_1460_7,100270243,Dominant Linux TCP fingerprint this period (common scanner stack); pivot to surface broad-sweep infrastructure beyond the top-20 IPs. Correlate with malicious tags rather than treating as a standalone indicator.
+fingerprint,JA4T 1025_2_1460_0,10983842,"JA4T fingerprint of the Masscan cluster (DigitalOcean-Singapore peers: 128.199.240.7, 167.172.65.202, 152.42.238.0, 157.230.251.67); paired with JA4H ge10nn020000_db6abae5e99a for detection; peer rotation persists."
+fingerprint,JA4T 64952_2-4-8-1-3_1412_7,N/A,Secondary high-volume Linux TCP fingerprint flagged for hunting alongside the dominant scanner-stack fingerprint.

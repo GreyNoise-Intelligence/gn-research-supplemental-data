@@ -1,0 +1,13 @@
+type,indicator,sessions,context
+ip,94.102.49.82,4180759,"Largest single source this week (AS202425, IP Volume inc, NL, malicious). RDP Crawler 3,134,643 + RDP Bruteforce 279,746. Concentrated 48-hour burst 01-02 June, then quiet."
+cidr,85.11.167.0/24,8188486,"Persistent two-node scanner pair on AS209630 (LLC VASH KREDIT BANK, NL): 85.11.167.7 (4,131,167) + 85.11.167.11 (4,057,319). >99% untagged high-volume connection scanning. Block at perimeter, pair with JA4T fingerprint hunting."
+cidr,160.119.76.0/24,3512796,"Alsycon B.V. (AS49870, NL) pair 160.119.76.51 + 160.119.76.52. Persistent high-volume scanning; this period dominated by web/TLS crawling. Block and monitor for behavioral shifts."
+ip,45.198.224.18,2527511,"VPSVAULT.HOST RouterOS brute-force node (AS215925, NL). RouterOS Bruteforcer 1,006,257 on TCP/8728. Third consecutive week."
+ip,45.205.1.5,1312552,"VPSVAULT.HOST RouterOS brute-force node (AS215925, BR). RouterOS Bruteforcer 525,869 on TCP/8728. Third consecutive week."
+ip,87.251.64.146,1323210,"Unattributed single-port sweep (AS200730, PL). 1,323,210 sessions exclusively on TCP/1723, GreyNoise classification unknown, >99% untagged. Reported as an observable pattern only; no threat attribution asserted."
+domain,vpsvault[.]host,N/A,"VPSVAULT.HOST LTD (AS215925) hosting the persistent RouterOS bruteforcer pair (45.198.224.18 NL, 45.205.1.5 BR)."
+cve,CVE-2025-55182,410955,"React Server Components unsafe-deserialization RCE (CVSS 10.0, CISA KEV). Highest-volume KEV web RCE in the dataset this week. Persistent."
+cve,CVE-2017-9841,730717,"PHPUnit eval-stdin.php RCE (CVSS 9.8). Sustained web-scanner volume this week."
+cve,CVE-2021-41773,163046,"Apache HTTP Server path traversal (CVSS 9.8, CISA KEV). Sustained web-scanner volume this week."
+cve,CVE-2020-2034,180768,"Palo Alto Networks PAN-OS CVE-2020-2034 Crawler tag, dataset-wide volume this week (not attributed to a single source)."
+cve,CVE-2024-4577,66138,"PHP-CGI Windows argument injection (CVSS 9.8, CISA KEV). Sustained web-scanner volume this week."

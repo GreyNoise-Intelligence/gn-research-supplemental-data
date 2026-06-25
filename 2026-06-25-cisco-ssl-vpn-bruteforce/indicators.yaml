@@ -1,0 +1,69 @@
+# Cisco SSL VPN brute-force — Indicators of Attack (IOA)
+# Source: GreyNoise.
+# TLP:CLEAR. Captured 2026-06-25. Window: last 90 days. Counts point-in-time; IP membership rotates.
+
+metadata:
+  title: Cisco SSL VPN brute-force
+  tlp: CLEAR
+  source: GreyNoise
+  captured: "2026-06-25"
+  window: 90d
+
+ip_sets:
+  - id: cisco_ssl_vpn_bruteforcer
+    classification: malicious
+    spoofable: false
+    ip_count: 4575
+    file: cisco-ssl-vpn-bruteforcer-ips.txt
+    query: 'tags:"Cisco SSL VPN Bruteforcer" last_seen:90d'
+
+  - id: cisco_asa_scanner_malicious
+    classification: malicious
+    spoofable: false
+    ip_count: 6356
+    file: cisco-asa-scanner-malicious-ips.txt
+    query: 'tags:"Cisco ASA Scanner" classification:malicious last_seen:90d'
+
+ja4h:
+  query_template: 'raw_data.http.ja4h:"<value>" last_seen:90d'
+  fingerprints:
+    - { value: po11cr08enus_cfae05abdd6e_63ceca33449b_28bdf91c33de, ips: 1441, specificity_pct: 100.0 }
+    - { value: po11cr08enus_cfae05abdd6e_5331e643ec38_345c72ab5efa, ips: 1366, specificity_pct: 100.0 }
+    - { value: po11cn110000_b54950267054_63ceca33449b_bffa328698d0, ips: 1359, specificity_pct: 100.0 }
+    - { value: po11cn110000_b54950267054_63ceca33449b_28bdf91c33de, ips: 1353, specificity_pct: 99.9 }
+    - { value: po11cn110000_b54950267054_63ceca33449b_bc95edd148ed, ips: 1335, specificity_pct: 99.9 }
+    - { value: po11nn110000_b54950267054_000000000000_000000000000, ips: 1294, specificity_pct: 86.6 }
+    - { value: po11cn110000_b54950267054_f913ba0d6c2b_ae3c12dd5578, ips: 1285, specificity_pct: 98.8 }
+    - { value: po11cn120000_7dcd1d0610ce_affe1b732ce4_7bbe904201b2, ips: 333,  specificity_pct: 94.9 }
+    - { value: po11cn10enus_0504014df539_7b0c69bf2b05_c8f49270e430, ips: 177,  specificity_pct: 100.0 }
+    - { value: po11cn050000_a9e6c43a0296_d688e2d831a6_fdb785992f47, ips: 19,   specificity_pct: 100.0 }
+    - { value: po11cr17enus_2377ad9ce427_a05d205c00f3_69256613a9c8, ips: 13,   specificity_pct: 100.0 }
+    - { value: po11cn060000_a7c613a478a4_5331e643ec38_345c72ab5efa, ips: 2,    specificity_pct: 100.0 }
+
+ports:
+  - { port: 443,   ips: 4573 }
+  - { port: 10443, ips: 483 }
+  - { port: 8443,  ips: 406 }
+  - { port: 4443,  ips: 289 }
+
+web_paths:
+  - { path: "/+webvpn+/index.html", ips: 4575 }
+  - { path: "/+CSCOE+/logon.html",  ips: 4574 }
+
+asns:                 # full list in asns.csv
+  - { asn: AS394474, org: WhiteLabelColo,                ips: 700 }
+  - { asn: AS263740, org: Corporacion Laceibanetsociety, ips: 436 }
+  - { asn: AS3257,   org: GTT Communications Inc.,       ips: 398 }
+  - { asn: AS397044, org: My Tec Sa,                     ips: 319 }
+  - { asn: AS62240,  org: Clouvider,                     ips: 301 }
+
+tags:
+  - Cisco SSL VPN Bruteforcer
+  - Cisco ASA Scanner
+  - Cisco WebVPN / SSL VPN Crawler
+  - Generic Login Attempt
+
+usernames:
+  file: usernames.txt
+  distinct: 30007
+  window: "2026-06-22 to 2026-06-23"

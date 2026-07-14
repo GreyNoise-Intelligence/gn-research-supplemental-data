@@ -1,0 +1,18 @@
+type,indicator,sessions,context
+cve,CVE-2025-55182,189829,React Server Components unsafe deserialization RCE; CVSS 10.0; on CISA KEV; steady persistent exploitation vs prior briefs
+cve,CVE-2024-29291,86034,"Laravel credential-leak via storage/logs/laravel.log; disputed severity (no CVSS weight), not on CISA KEV; 86,034 corpus-wide this week, requested at scale by rented secrets-harvesting fleets"
+cve,CVE-2022-47945,75882,"ThinkPHP pearcmd.php LFI to RCE; CVSS 9.8; not on CISA KEV; public exploit code; 75,882 corpus-wide this week, 12,600 of it from the single-source LFI host 103.168.66.158 (also seen in prior briefs)"
+cve,CVE-2025-48927,5161,TeleMessage Spring Boot Actuator /heapdump disclosure; not on CISA KEV; cycled by persistent Feo Prest harvester
+cve,CVE-2019-7254,4047,Linear eMerge E3 file-inclusion LFI; not on CISA KEV; older primitive folded into single-source LFI chain
+cve,CVE-2018-13379,1704,"FortiOS SSL VPN path-traversal credential disclosure; on CISA KEV; early-warning IP-breadth spike to 894 source IPs on 13 Jul (~298x median day); sessions value is the 13 Jul spike-day count, attempt-level"
+cve,CVE-2016-6277,8326,"NETGEAR command-injection RCE; early-warning session-volume spike on 08 Jul (~33x median day); sessions value is the 08 Jul spike-day count, attempt-level"
+cve,CVE-2010-1217,1989,Joomla JE Form Creator directory traversal LFI; not on CISA KEV; legacy traversal primitive in single-source chain
+cve,CVE-2025-30208,433,Vite arbitrary file disclosure; not on CISA KEV; cycled by persistent Feo Prest harvester
+cve,CVE-2024-44000,955,"WordPress LiteSpeed Cache debug-log exposure; not on CISA KEV; observed on multiple harvesting hosts this week, public exploit; VM high-priority (7 days)"
+cidr,185.177.72.0/24,4195836,"AS211590 Bucklog SARL (FR); 20-host secrets/config-harvesting fleet carrying Laravel CVE-2024-29291 this week (this-week GreyNoise classification: unknown); block at perimeter as perishable indicator"
+cidr,45.148.10.0/24,3024821,AS48090 TECHOFF SRV LIMITED (NL); web-exploitation/secrets fleet; shares JA4 with lead LFI host; block at perimeter as perishable indicator
+cidr,91.238.181.0/24,1677613,"AS49434 FBW NETWORKS SAS (FR); 9-host coordinated RDP fleet, mostly RDP crawling with a smaller brute-force component (lead host targets US/Canada); block at perimeter"
+cidr,45.198.224.0/24,1349957,AS215925 VPSVAULT.HOST LTD (NL); two-host RouterOS API (TCP/8728) brute-force; block at perimeter and restrict 8728 to management networks
+fingerprint,JA4 t13i151000_8daaf6152771_ab7e3b40a677,N/A,Links lead LFI/path-traversal host 103.168.66.158 (DIGI VPS) to TECHOFF fleet host 45.148.10.42; surfaces shared traversal toolkit
+fingerprint,JA4SSH c0s35_c0s2_c4s1,N/A,Shared by VPSVAULT RouterOS brute-force pair 45.198.224.18 and 45.198.224.15; ties addresses to one brute-force toolset
+fingerprint,JA4T 200_2-1-3-1-1-4_1460_0,N/A,"Common RDP-tool TCP signature seen on 121 sources across 20+ providers this week; identifies the RDP tool class, not a single operator or fleet"

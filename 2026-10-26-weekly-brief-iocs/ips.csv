@@ -1,0 +1,13 @@
+# 10 high-volume IPs observed in the window 2026-10-19 to 2026-10-26. It is a volume ranking, not a curated indicator list. The classification column is GreyNoise's own: 7 malicious, 1 suspicious, 2 unknown. Triage on classification and on the findings named in the brief, never on rank. The per-host block targets named in the brief are listed in the indicator file alongside this one. A hosting or cloud provider record is ownership only and does not exempt an address from a block.
+# The gn_service column names the operator of shared infrastructure (a CDN, vulnerability scanner or search engine), resolved live from GreyNoise Business Service Intelligence at generation time. Where gn_service is non-empty, do not block the address even where it is classified malicious, and do not file an abuse report against it: key the control on the tags named in the brief. An empty gn_service is not a judgment either way.
+ip,sessions,classification,gn_service
+94.26.41.152,1927895,malicious,
+139.87.112.101,1858652,malicious,Qualys
+92.205.109.198,1401887,unknown,
+82.27.71.87,1389764,suspicious,
+195.178.110.218,1299738,malicious,
+62.164.177.54,1246841,malicious,
+195.178.110.137,1200718,malicious,
+85.11.167.7,1146003,malicious,
+94.26.41.162,1137731,malicious,
+212.56.32.197,1118361,unknown,
